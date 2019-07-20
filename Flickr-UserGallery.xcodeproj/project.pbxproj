@@ -77,9 +77,9 @@
 		CCE4AB4B22E3C6E600DA4F80 = {
 			isa = PBXGroup;
 			children = (
-				CCE4AB5622E3C6E600DA4F80 /* Flickr-UserGallery */,
-				CCE4AB6B22E3C6E800DA4F80 /* Flickr-UserGalleryTests */,
-				CCE4AB7622E3C6E800DA4F80 /* Flickr-UserGalleryUITests */,
+				CCE4AB5622E3C6E600DA4F80 /* Sources */,
+				CCE4AB6B22E3C6E800DA4F80 /* Tests */,
+				CCE4AB7622E3C6E800DA4F80 /* UITests */,
 				CCE4AB5522E3C6E600DA4F80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCE4AB5622E3C6E600DA4F80 /* Flickr-UserGallery */ = {
+		CCE4AB5622E3C6E600DA4F80 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				CCE4AB5722E3C6E600DA4F80 /* AppDelegate.swift */,
@@ -104,25 +104,25 @@
 				CCE4AB6022E3C6E800DA4F80 /* LaunchScreen.storyboard */,
 				CCE4AB6322E3C6E800DA4F80 /* Info.plist */,
 			);
-			path = "Flickr-UserGallery";
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		CCE4AB6B22E3C6E800DA4F80 /* Flickr-UserGalleryTests */ = {
+		CCE4AB6B22E3C6E800DA4F80 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				CCE4AB6C22E3C6E800DA4F80 /* Flickr_UserGalleryTests.swift */,
 				CCE4AB6E22E3C6E800DA4F80 /* Info.plist */,
 			);
-			path = "Flickr-UserGalleryTests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		CCE4AB7622E3C6E800DA4F80 /* Flickr-UserGalleryUITests */ = {
+		CCE4AB7622E3C6E800DA4F80 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
 				CCE4AB7722E3C6E800DA4F80 /* Flickr_UserGalleryUITests.swift */,
 				CCE4AB7922E3C6E800DA4F80 /* Info.plist */,
 			);
-			path = "Flickr-UserGalleryUITests";
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
