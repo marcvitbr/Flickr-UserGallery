@@ -63,6 +63,12 @@
 		CCE4ABE922E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE722E4D7F100DA4F80 /* ImageInfoFetcherError.swift */; };
 		CCE4ABEB22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */; };
 		CCE4ABEC22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */; };
+		CCE4ABF122E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF022E4FF0900DA4F80 /* DependencyReceiver.swift */; };
+		CCE4ABF222E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF022E4FF0900DA4F80 /* DependencyReceiver.swift */; };
+		CCE4ABF422E4FF1800DA4F80 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF322E4FF1800DA4F80 /* DependencyProvider.swift */; };
+		CCE4ABF522E4FF1800DA4F80 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF322E4FF1800DA4F80 /* DependencyProvider.swift */; };
+		CCE4ABF722E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */; };
+		CCE4ABF822E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +134,9 @@
 		CCE4ABE422E4D7EA00DA4F80 /* ImageInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFetcher.swift; sourceTree = "<group>"; };
 		CCE4ABE722E4D7F100DA4F80 /* ImageInfoFetcherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFetcherError.swift; sourceTree = "<group>"; };
 		CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoReceiver.swift; sourceTree = "<group>"; };
+		CCE4ABF022E4FF0900DA4F80 /* DependencyReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyReceiver.swift; sourceTree = "<group>"; };
+		CCE4ABF322E4FF1800DA4F80 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +187,7 @@
 		CCE4AB5622E3C6E600DA4F80 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABED22E4FEDC00DA4F80 /* App */,
 				CCE4AB8622E3CA5500DA4F80 /* Core */,
 				CCE4AB5722E3C6E600DA4F80 /* AppDelegate.swift */,
 				CCE4AB5922E3C6E600DA4F80 /* ViewController.swift */,
@@ -414,6 +424,32 @@
 			path = GetImageInfo;
 			sourceTree = "<group>";
 		};
+		CCE4ABED22E4FEDC00DA4F80 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABEE22E4FEE200DA4F80 /* Plugin */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CCE4ABEE22E4FEE200DA4F80 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABEF22E4FEE900DA4F80 /* Dependency */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		CCE4ABEF22E4FEE900DA4F80 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */,
+				CCE4ABF322E4FF1800DA4F80 /* DependencyProvider.swift */,
+				CCE4ABF022E4FF0900DA4F80 /* DependencyReceiver.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -545,12 +581,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE4ABF422E4FF1800DA4F80 /* DependencyProvider.swift in Sources */,
 				CCE4ABC722E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
 				CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AB5A22E3C6E600DA4F80 /* ViewController.swift in Sources */,
 				CCE4ABEB22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
 				CCE4AB5822E3C6E600DA4F80 /* AppDelegate.swift in Sources */,
 				CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
+				CCE4ABF722E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */,
 				CCE4AB9022E3CB3700DA4F80 /* ImageUrls.swift in Sources */,
 				CCE4ABDE22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
@@ -564,6 +602,7 @@
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
+				CCE4ABF122E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE4ABF522E4FF1800DA4F80 /* DependencyProvider.swift in Sources */,
 				CCE4ABD622E4D47F00DA4F80 /* ImageInfoFetcherMock.swift in Sources */,
 				CCE4AB9822E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
 				CCE4ABA822E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift in Sources */,
@@ -599,9 +639,11 @@
 				CCE4ABA322E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift in Sources */,
 				CCE4ABBC22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4ABD822E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift in Sources */,
+				CCE4ABF822E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */,
 				CCE4AB8B22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4ABEC22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
 				CCE4ABA122E3CC8E00DA4F80 /* GetImageUrlsTests.swift in Sources */,
+				CCE4ABF222E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,
 				CCE4AB9B22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4ABDC22E4D4E300DA4F80 /* ImageInfoFixture.swift in Sources */,
 			);
