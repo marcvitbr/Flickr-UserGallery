@@ -78,6 +78,10 @@
 		CCE4AC0A22E5030C00DA4F80 /* DefaultHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */; };
 		CCE4AC0C22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */; };
 		CCE4AC0D22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */; };
+		CCE4AC1422E5116000DA4F80 /* DefaultImageInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC1322E5116000DA4F80 /* DefaultImageInfoFetcher.swift */; };
+		CCE4AC1722E5150000DA4F80 /* ImageInfoJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC1622E5150000DA4F80 /* ImageInfoJSONParser.swift */; };
+		CCE4AC1922E5151600DA4F80 /* ImageInfoJSONParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC1822E5151600DA4F80 /* ImageInfoJSONParserError.swift */; };
+		CCE4AC1B22E5152B00DA4F80 /* DefaultImageInfoJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC1A22E5152B00DA4F80 /* DefaultImageInfoJSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +156,10 @@
 		CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHTTPClient.swift; sourceTree = "<group>"; };
 		CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrInfoProvider.swift; sourceTree = "<group>"; };
+		CCE4AC1322E5116000DA4F80 /* DefaultImageInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImageInfoFetcher.swift; sourceTree = "<group>"; };
+		CCE4AC1622E5150000DA4F80 /* ImageInfoJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoJSONParser.swift; sourceTree = "<group>"; };
+		CCE4AC1822E5151600DA4F80 /* ImageInfoJSONParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoJSONParserError.swift; sourceTree = "<group>"; };
+		CCE4AC1A22E5152B00DA4F80 /* DefaultImageInfoJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImageInfoJSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +480,8 @@
 		CCE4ABF922E5009500DA4F80 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4AC0E22E510F600DA4F80 /* Gallery */,
+				CCE4AC0F22E510FC00DA4F80 /* Image */,
 				CCE4ABFA22E500A600DA4F80 /* Shared */,
 			);
 			path = Infrastructure;
@@ -511,6 +521,56 @@
 				CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCE4AC0E22E510F600DA4F80 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC1022E5113100DA4F80 /* FetchPublicImages */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		CCE4AC0F22E510FC00DA4F80 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC1222E5114300DA4F80 /* GetImageUrls */,
+				CCE4AC1122E5113C00DA4F80 /* GetImageInfo */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		CCE4AC1022E5113100DA4F80 /* FetchPublicImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FetchPublicImages;
+			sourceTree = "<group>";
+		};
+		CCE4AC1122E5113C00DA4F80 /* GetImageInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC1522E5147700DA4F80 /* Parser */,
+				CCE4AC1322E5116000DA4F80 /* DefaultImageInfoFetcher.swift */,
+			);
+			path = GetImageInfo;
+			sourceTree = "<group>";
+		};
+		CCE4AC1222E5114300DA4F80 /* GetImageUrls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GetImageUrls;
+			sourceTree = "<group>";
+		};
+		CCE4AC1522E5147700DA4F80 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC1A22E5152B00DA4F80 /* DefaultImageInfoJSONParser.swift */,
+				CCE4AC1622E5150000DA4F80 /* ImageInfoJSONParser.swift */,
+				CCE4AC1822E5151600DA4F80 /* ImageInfoJSONParserError.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -675,6 +735,8 @@
 				CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AB5A22E3C6E600DA4F80 /* ViewController.swift in Sources */,
 				CCE4ABEB22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
+				CCE4AC1B22E5152B00DA4F80 /* DefaultImageInfoJSONParser.swift in Sources */,
+				CCE4AC1722E5150000DA4F80 /* ImageInfoJSONParser.swift in Sources */,
 				CCE4AB5822E3C6E600DA4F80 /* AppDelegate.swift in Sources */,
 				CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4ABF722E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */,
@@ -684,6 +746,7 @@
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4ABE822E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */,
 				CCE4ABE522E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
+				CCE4AC1922E5151600DA4F80 /* ImageInfoJSONParserError.swift in Sources */,
 				CCE4AB9722E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
 				CCE4ABAC22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */,
 				CCE4ABB522E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
@@ -692,6 +755,7 @@
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
 				CCE4ABFE22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
+				CCE4AC1422E5116000DA4F80 /* DefaultImageInfoFetcher.swift in Sources */,
 				CCE4AC0C22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
 				CCE4ABF122E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,

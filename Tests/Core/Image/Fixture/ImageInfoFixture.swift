@@ -13,6 +13,6 @@ final class ImageInfoFixture {
                                           title: "title",
                                           description: "description",
                                           dateTaken: Date(timeIntervalSinceNow: 0),
-                                          viewCount: 0,
-                                          commentCount: 0)
+                                          viewCount: "0",
+                                          commentCount: "0")
 }

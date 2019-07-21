@@ -12,11 +12,16 @@ class ImageInfo {
     private let photoId: String
     private let title: String
     private let description: String
-    private let dateTaken: Date
-    private let viewCount: Int
-    private let commentCount: Int
+    private let dateTaken: Date?
+    private let viewCount: String?
+    private let commentCount: String?
 
-    init(photoId: String, title: String, description: String, dateTaken: Date, viewCount: Int, commentCount: Int) {
+    init(photoId: String,
+         title: String,
+         description: String,
+         dateTaken: Date?,
+         viewCount: String?,
+         commentCount: String?) {
         self.photoId = photoId
         self.title = title
         self.description = description
