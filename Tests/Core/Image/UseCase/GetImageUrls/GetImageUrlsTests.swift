@@ -9,15 +9,15 @@
 import XCTest
 
 final class ObtainImageDetailsTests: XCTestCase {
-    private let receiverMock = ImageDetailsReceiverMock()
+    private let receiverMock = ImageUrlsReceiverMock()
 
     private let photoId = "48274406512"
 
     func testObtainImageDetailsSuccessfully() {
-        let fetcherMock = ImageDetailsFetcherMock()
+        let fetcherMock = ImageUrlsFetcherMock()
 
-        let obtainDetails = ObtainImageDetails(fetcher: fetcherMock,
-                                               receiver: self.receiverMock)
+        let obtainDetails = GetImageUrls(fetcher: fetcherMock,
+                                         receiver: self.receiverMock)
 
         obtainDetails.execute(with: self.photoId)
 
@@ -27,10 +27,10 @@ final class ObtainImageDetailsTests: XCTestCase {
     }
 
     func testFailureWhenObtainingImageDetails() {
-        let fetcherMock = ImageDetailsFetcherMockForFailure()
+        let fetcherMock = ImageUrlsFetcherMockForFailure()
 
-        let obtainDetails = ObtainImageDetails(fetcher: fetcherMock,
-                                               receiver: self.receiverMock)
+        let obtainDetails = GetImageUrls(fetcher: fetcherMock,
+                                         receiver: self.receiverMock)
 
         obtainDetails.execute(with: self.photoId)
 
