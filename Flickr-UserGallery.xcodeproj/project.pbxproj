@@ -76,6 +76,8 @@
 		CCE4AC0622E5026C00DA4F80 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE4AC0422E5026C00DA4F80 /* Alamofire.framework */; };
 		CCE4AC0722E5026C00DA4F80 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */; };
 		CCE4AC0A22E5030C00DA4F80 /* DefaultHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */; };
+		CCE4AC0C22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */; };
+		CCE4AC0D22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,7 @@
 		CCE4AC0422E5026C00DA4F80 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHTTPClient.swift; sourceTree = "<group>"; };
+		CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrInfoProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +499,7 @@
 		CCE4ABFC22E500AE00DA4F80 /* Flickr */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4AC0B22E505E600DA4F80 /* FlickrInfoProvider.swift */,
 			);
 			path = Flickr;
 			sourceTree = "<group>";
@@ -688,6 +692,7 @@
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
 				CCE4ABFE22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
+				CCE4AC0C22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
 				CCE4ABF122E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,
 			);
@@ -720,6 +725,7 @@
 				CCE4ABDA22E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift in Sources */,
 				CCE4ABD122E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
 				CCE4ABB222E3EDF300DA4F80 /* PublicImagesFetcherMock.swift in Sources */,
+				CCE4AC0D22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4ABC822E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
 				CCE4ABE622E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
 				CCE4ABCC22E3F18500DA4F80 /* QueryFixture.swift in Sources */,
