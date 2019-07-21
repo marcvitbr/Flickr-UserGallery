@@ -7,7 +7,7 @@
 //
 
 protocol ImageDetailsReceiver: AnyObject {
-    func receiveImageDetails(_ details: ImageDetails)
+    func receiveImageDetails(_ details: ImageUrls)
 
     func handleErrorObtainingImageDetails()
 }

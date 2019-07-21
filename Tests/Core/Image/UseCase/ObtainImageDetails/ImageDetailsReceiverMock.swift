@@ -11,7 +11,7 @@ final class ImageDetailsReceiverMock: ImageDetailsReceiver {
 
     var callsToHandleErrorObtainingImageDetails = 0
 
-    func receiveImageDetails(_ details: ImageDetails) {
+    func receiveImageDetails(_ details: ImageUrls) {
         self.callsToReceiveImageDetails += 1
     }
 

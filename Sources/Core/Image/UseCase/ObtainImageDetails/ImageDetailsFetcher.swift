@@ -7,5 +7,5 @@
 //
 
 protocol ImageDetailsFetcher: AnyObject {
-    func obtainImageDetails(photoId: String) throws -> ImageDetails
+    func obtainImageDetails(photoId: String) throws -> ImageUrls
 }

@@ -7,7 +7,7 @@
 //
 
 final class ImageDetailsFetcherMockForFailure: ImageDetailsFetcherMock {
-    override func obtainImageDetails(photoId: String) throws -> ImageDetails {
+    override func obtainImageDetails(photoId: String) throws -> ImageUrls {
         _ = try super.obtainImageDetails(photoId: photoId)
 
         throw ImageDetailsFetcherError.errorObtainingImageDetails

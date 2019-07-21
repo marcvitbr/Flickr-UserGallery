@@ -7,7 +7,7 @@
 //
 
 final class ImageDetailsFixture {
-    static let validImageDetails = ImageDetails(photoId: "48263324266",
-                                                largeSquareUrlPath: "https://live.staticflickr.com/65535/48263324266_e676bf11f8_q.jpg",
-                                                largeUrlPath: "https://live.staticflickr.com/65535/48263324266_e676bf11f8_b.jpg")
+    static let validImageDetails = ImageUrls(photoId: "48263324266",
+                                             largeSquareUrlPath: "https://live.staticflickr.com/65535/48263324266_e676bf11f8_q.jpg",
+                                             largeUrlPath: "https://live.staticflickr.com/65535/48263324266_e676bf11f8_b.jpg")
 }

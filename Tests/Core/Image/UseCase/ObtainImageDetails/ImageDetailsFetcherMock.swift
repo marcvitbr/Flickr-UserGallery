@@ -9,7 +9,7 @@
 class ImageDetailsFetcherMock: ImageDetailsFetcher {
     var callsToObtainImageDetails = 0
 
-    func obtainImageDetails(photoId: String) throws -> ImageDetails {
+    func obtainImageDetails(photoId: String) throws -> ImageUrls {
         self.callsToObtainImageDetails += 1
         return ImageDetailsFixture.validImageDetails
     }
