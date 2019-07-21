@@ -69,6 +69,13 @@
 		CCE4ABF522E4FF1800DA4F80 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF322E4FF1800DA4F80 /* DependencyProvider.swift */; };
 		CCE4ABF722E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */; };
 		CCE4ABF822E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */; };
+		CCE4ABFE22E500CF00DA4F80 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABFD22E500CF00DA4F80 /* HTTPClient.swift */; };
+		CCE4ABFF22E500CF00DA4F80 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABFD22E500CF00DA4F80 /* HTTPClient.swift */; };
+		CCE4AC0122E500F800DA4F80 /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0022E500F800DA4F80 /* HTTPClientError.swift */; };
+		CCE4AC0222E500F800DA4F80 /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0022E500F800DA4F80 /* HTTPClientError.swift */; };
+		CCE4AC0622E5026C00DA4F80 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE4AC0422E5026C00DA4F80 /* Alamofire.framework */; };
+		CCE4AC0722E5026C00DA4F80 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */; };
+		CCE4AC0A22E5030C00DA4F80 /* DefaultHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +144,11 @@
 		CCE4ABF022E4FF0900DA4F80 /* DependencyReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyReceiver.swift; sourceTree = "<group>"; };
 		CCE4ABF322E4FF1800DA4F80 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
 		CCE4ABF622E4FF2300DA4F80 /* DependencyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConfigurator.swift; sourceTree = "<group>"; };
+		CCE4ABFD22E500CF00DA4F80 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CCE4AC0022E500F800DA4F80 /* HTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientError.swift; sourceTree = "<group>"; };
+		CCE4AC0422E5026C00DA4F80 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE4AC0622E5026C00DA4F80 /* Alamofire.framework in Frameworks */,
+				CCE4AC0722E5026C00DA4F80 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +185,7 @@
 				CCE4AB6B22E3C6E800DA4F80 /* Tests */,
 				CCE4AB7622E3C6E800DA4F80 /* UITests */,
 				CCE4AB5522E3C6E600DA4F80 /* Products */,
+				CCE4AC0322E5026C00DA4F80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -427,6 +442,7 @@
 		CCE4ABED22E4FEDC00DA4F80 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABF922E5009500DA4F80 /* Infrastructure */,
 				CCE4ABEE22E4FEE200DA4F80 /* Plugin */,
 			);
 			path = App;
@@ -450,6 +466,49 @@
 			path = Dependency;
 			sourceTree = "<group>";
 		};
+		CCE4ABF922E5009500DA4F80 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABFA22E500A600DA4F80 /* Shared */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CCE4ABFA22E500A600DA4F80 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABFC22E500AE00DA4F80 /* Flickr */,
+				CCE4ABFB22E500AA00DA4F80 /* HTTP */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CCE4ABFB22E500AA00DA4F80 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC0922E5030C00DA4F80 /* DefaultHTTPClient.swift */,
+				CCE4ABFD22E500CF00DA4F80 /* HTTPClient.swift */,
+				CCE4AC0022E500F800DA4F80 /* HTTPClientError.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		CCE4ABFC22E500AE00DA4F80 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flickr;
+			sourceTree = "<group>";
+		};
+		CCE4AC0322E5026C00DA4F80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC0422E5026C00DA4F80 /* Alamofire.framework */,
+				CCE4AC0522E5026C00DA4F80 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +519,7 @@
 				CCE4AB5022E3C6E600DA4F80 /* Sources */,
 				CCE4AB5122E3C6E600DA4F80 /* Frameworks */,
 				CCE4AB5222E3C6E600DA4F80 /* Resources */,
+				CCE4AC0822E5028A00DA4F80 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -576,6 +636,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CCE4AC0822E5028A00DA4F80 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCE4AB5022E3C6E600DA4F80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -583,6 +667,7 @@
 			files = (
 				CCE4ABF422E4FF1800DA4F80 /* DependencyProvider.swift in Sources */,
 				CCE4ABC722E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
+				CCE4AC0A22E5030C00DA4F80 /* DefaultHTTPClient.swift in Sources */,
 				CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AB5A22E3C6E600DA4F80 /* ViewController.swift in Sources */,
 				CCE4ABEB22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
@@ -590,6 +675,7 @@
 				CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4ABF722E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */,
 				CCE4AB9022E3CB3700DA4F80 /* ImageUrls.swift in Sources */,
+				CCE4AC0122E500F800DA4F80 /* HTTPClientError.swift in Sources */,
 				CCE4ABDE22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4ABE822E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */,
@@ -601,6 +687,7 @@
 				CCE4ABE222E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */,
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
+				CCE4ABFE22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
 				CCE4ABF122E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,
 			);
@@ -627,6 +714,7 @@
 				CCE4ABDF22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */,
 				CCE4ABD422E4D45300DA4F80 /* GetImageInfoTests.swift in Sources */,
+				CCE4AC0222E500F800DA4F80 /* HTTPClientError.swift in Sources */,
 				CCE4ABE922E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */,
 				CCE4AB9522E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
 				CCE4ABDA22E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift in Sources */,
@@ -640,6 +728,7 @@
 				CCE4ABBC22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4ABD822E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift in Sources */,
 				CCE4ABF822E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */,
+				CCE4ABFF22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
 				CCE4AB8B22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4ABEC22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
 				CCE4ABA122E3CC8E00DA4F80 /* GetImageUrlsTests.swift in Sources */,
@@ -814,6 +903,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF4NVVGD52;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -832,6 +925,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF4NVVGD52;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
