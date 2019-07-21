@@ -11,6 +11,6 @@ class ImageUrlsFetcherMock: ImageUrlsFetcher {
 
     func getImageUrls(photoId: String) throws -> ImageUrls {
         self.callsToObtainImageDetails += 1
-        return ImageDetailsFixture.validImageDetails
+        return ImageUrlsFixture.validImageUrls
     }
 }

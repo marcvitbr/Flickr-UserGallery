@@ -26,7 +26,7 @@
 		CCE4AB9B22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AB9922E3CB9A00DA4F80 /* ImageUrlsReceiver.swift */; };
 		CCE4ABA122E3CC8E00DA4F80 /* GetImageUrlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA022E3CC8E00DA4F80 /* GetImageUrlsTests.swift */; };
 		CCE4ABA322E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA222E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift */; };
-		CCE4ABA622E3CCE700DA4F80 /* ImageDetailsFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA522E3CCE700DA4F80 /* ImageDetailsFixture.swift */; };
+		CCE4ABA622E3CCE700DA4F80 /* ImageUrlsFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA522E3CCE700DA4F80 /* ImageUrlsFixture.swift */; };
 		CCE4ABA822E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA722E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift */; };
 		CCE4ABAA22E3CD4000DA4F80 /* ImageUrlsFetcherMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA922E3CD4000DA4F80 /* ImageUrlsFetcherMockForFailure.swift */; };
 		CCE4ABAC22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABAB22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift */; };
@@ -48,6 +48,21 @@
 		CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCD22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift */; };
 		CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */; };
 		CCE4ABD122E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */; };
+		CCE4ABD422E4D45300DA4F80 /* GetImageInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABD322E4D45300DA4F80 /* GetImageInfoTests.swift */; };
+		CCE4ABD622E4D47F00DA4F80 /* ImageInfoFetcherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABD522E4D47F00DA4F80 /* ImageInfoFetcherMock.swift */; };
+		CCE4ABD822E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABD722E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift */; };
+		CCE4ABDA22E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABD922E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift */; };
+		CCE4ABDC22E4D4E300DA4F80 /* ImageInfoFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABDB22E4D4E300DA4F80 /* ImageInfoFixture.swift */; };
+		CCE4ABDE22E4D52A00DA4F80 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABDD22E4D52A00DA4F80 /* ImageInfo.swift */; };
+		CCE4ABDF22E4D52A00DA4F80 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABDD22E4D52A00DA4F80 /* ImageInfo.swift */; };
+		CCE4ABE222E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE122E4D7DA00DA4F80 /* GetImageInfo.swift */; };
+		CCE4ABE322E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE122E4D7DA00DA4F80 /* GetImageInfo.swift */; };
+		CCE4ABE522E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE422E4D7EA00DA4F80 /* ImageInfoFetcher.swift */; };
+		CCE4ABE622E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE422E4D7EA00DA4F80 /* ImageInfoFetcher.swift */; };
+		CCE4ABE822E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE722E4D7F100DA4F80 /* ImageInfoFetcherError.swift */; };
+		CCE4ABE922E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABE722E4D7F100DA4F80 /* ImageInfoFetcherError.swift */; };
+		CCE4ABEB22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */; };
+		CCE4ABEC22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +103,7 @@
 		CCE4AB9922E3CB9A00DA4F80 /* ImageUrlsReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlsReceiver.swift; sourceTree = "<group>"; };
 		CCE4ABA022E3CC8E00DA4F80 /* GetImageUrlsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageUrlsTests.swift; sourceTree = "<group>"; };
 		CCE4ABA222E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlsFetcherMock.swift; sourceTree = "<group>"; };
-		CCE4ABA522E3CCE700DA4F80 /* ImageDetailsFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsFixture.swift; sourceTree = "<group>"; };
+		CCE4ABA522E3CCE700DA4F80 /* ImageUrlsFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlsFixture.swift; sourceTree = "<group>"; };
 		CCE4ABA722E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlsReceiverMock.swift; sourceTree = "<group>"; };
 		CCE4ABA922E3CD4000DA4F80 /* ImageUrlsFetcherMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlsFetcherMockForFailure.swift; sourceTree = "<group>"; };
 		CCE4ABAB22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlsFetcherError.swift; sourceTree = "<group>"; };
@@ -103,6 +118,16 @@
 		CCE4ABCB22E3F18500DA4F80 /* QueryFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryFixture.swift; sourceTree = "<group>"; };
 		CCE4ABCD22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesFetcherMockForFailure.swift; sourceTree = "<group>"; };
 		CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesFetcherError.swift; sourceTree = "<group>"; };
+		CCE4ABD322E4D45300DA4F80 /* GetImageInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageInfoTests.swift; sourceTree = "<group>"; };
+		CCE4ABD522E4D47F00DA4F80 /* ImageInfoFetcherMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFetcherMock.swift; sourceTree = "<group>"; };
+		CCE4ABD722E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFetcherMockForFailure.swift; sourceTree = "<group>"; };
+		CCE4ABD922E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoReceiverMock.swift; sourceTree = "<group>"; };
+		CCE4ABDB22E4D4E300DA4F80 /* ImageInfoFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFixture.swift; sourceTree = "<group>"; };
+		CCE4ABDD22E4D52A00DA4F80 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		CCE4ABE122E4D7DA00DA4F80 /* GetImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageInfo.swift; sourceTree = "<group>"; };
+		CCE4ABE422E4D7EA00DA4F80 /* ImageInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFetcher.swift; sourceTree = "<group>"; };
+		CCE4ABE722E4D7F100DA4F80 /* ImageInfoFetcherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoFetcherError.swift; sourceTree = "<group>"; };
+		CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfoReceiver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +246,7 @@
 		CCE4AB8D22E3CB1F00DA4F80 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABDD22E4D52A00DA4F80 /* ImageInfo.swift */,
 				CCE4AB8F22E3CB3700DA4F80 /* ImageUrls.swift */,
 			);
 			path = Model;
@@ -229,6 +255,7 @@
 		CCE4AB8E22E3CB2400DA4F80 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABE022E4D7B100DA4F80 /* GetImageInfo */,
 				CCE4AB9222E3CB5700DA4F80 /* GetImageUrls */,
 			);
 			path = UseCase;
@@ -237,10 +264,10 @@
 		CCE4AB9222E3CB5700DA4F80 /* GetImageUrls */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4AB9322E3CB6500DA4F80 /* GetImageUrls.swift */,
 				CCE4AB9622E3CB7E00DA4F80 /* ImageUrlsFetcher.swift */,
 				CCE4ABAB22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift */,
 				CCE4AB9922E3CB9A00DA4F80 /* ImageUrlsReceiver.swift */,
-				CCE4AB9322E3CB6500DA4F80 /* GetImageUrls.swift */,
 			);
 			path = GetImageUrls;
 			sourceTree = "<group>";
@@ -266,6 +293,7 @@
 		CCE4AB9E22E3CC5900DA4F80 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABD222E4D41E00DA4F80 /* GetImageInfo */,
 				CCE4AB9F22E3CC6200DA4F80 /* GetImageUrls */,
 			);
 			path = UseCase;
@@ -274,10 +302,10 @@
 		CCE4AB9F22E3CC6200DA4F80 /* GetImageUrls */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABA022E3CC8E00DA4F80 /* GetImageUrlsTests.swift */,
 				CCE4ABA222E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift */,
 				CCE4ABA922E3CD4000DA4F80 /* ImageUrlsFetcherMockForFailure.swift */,
 				CCE4ABA722E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift */,
-				CCE4ABA022E3CC8E00DA4F80 /* GetImageUrlsTests.swift */,
 			);
 			path = GetImageUrls;
 			sourceTree = "<group>";
@@ -285,7 +313,8 @@
 		CCE4ABA422E3CCDC00DA4F80 /* Fixture */ = {
 			isa = PBXGroup;
 			children = (
-				CCE4ABA522E3CCE700DA4F80 /* ImageDetailsFixture.swift */,
+				CCE4ABDB22E4D4E300DA4F80 /* ImageInfoFixture.swift */,
+				CCE4ABA522E3CCE700DA4F80 /* ImageUrlsFixture.swift */,
 			);
 			path = Fixture;
 			sourceTree = "<group>";
@@ -361,6 +390,28 @@
 				CCE4ABAE22E3E87900DA4F80 /* FetchPublicImages */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CCE4ABD222E4D41E00DA4F80 /* GetImageInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABD322E4D45300DA4F80 /* GetImageInfoTests.swift */,
+				CCE4ABD522E4D47F00DA4F80 /* ImageInfoFetcherMock.swift */,
+				CCE4ABD722E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift */,
+				CCE4ABD922E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift */,
+			);
+			path = GetImageInfo;
+			sourceTree = "<group>";
+		};
+		CCE4ABE022E4D7B100DA4F80 /* GetImageInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABE122E4D7DA00DA4F80 /* GetImageInfo.swift */,
+				CCE4ABE422E4D7EA00DA4F80 /* ImageInfoFetcher.swift */,
+				CCE4ABE722E4D7F100DA4F80 /* ImageInfoFetcherError.swift */,
+				CCE4ABEA22E4D81A00DA4F80 /* ImageInfoReceiver.swift */,
+			);
+			path = GetImageInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,14 +548,19 @@
 				CCE4ABC722E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
 				CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AB5A22E3C6E600DA4F80 /* ViewController.swift in Sources */,
+				CCE4ABEB22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
 				CCE4AB5822E3C6E600DA4F80 /* AppDelegate.swift in Sources */,
 				CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4AB9022E3CB3700DA4F80 /* ImageUrls.swift in Sources */,
+				CCE4ABDE22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
+				CCE4ABE822E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */,
+				CCE4ABE522E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
 				CCE4AB9722E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
 				CCE4ABAC22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */,
 				CCE4ABB522E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
 				CCE4ABBE22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
+				CCE4ABE222E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */,
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
@@ -515,29 +571,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE4ABD622E4D47F00DA4F80 /* ImageInfoFetcherMock.swift in Sources */,
 				CCE4AB9822E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
 				CCE4ABA822E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift in Sources */,
 				CCE4ABAA22E3CD4000DA4F80 /* ImageUrlsFetcherMockForFailure.swift in Sources */,
 				CCE4ABBF22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
-				CCE4ABA622E3CCE700DA4F80 /* ImageDetailsFixture.swift in Sources */,
+				CCE4ABA622E3CCE700DA4F80 /* ImageUrlsFixture.swift in Sources */,
+				CCE4ABE322E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */,
 				CCE4ABB022E3E8A700DA4F80 /* FetchPublicImagesTests.swift in Sources */,
 				CCE4AB6D22E3C6E800DA4F80 /* Flickr_UserGalleryTests.swift in Sources */,
 				CCE4ABB622E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
 				CCE4ABAD22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */,
 				CCE4ABC522E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4ABC122E3F04400DA4F80 /* PublicImagesReceiverMock.swift in Sources */,
+				CCE4ABDF22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */,
+				CCE4ABD422E4D45300DA4F80 /* GetImageInfoTests.swift in Sources */,
+				CCE4ABE922E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */,
 				CCE4AB9522E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
+				CCE4ABDA22E4D4AC00DA4F80 /* ImageInfoReceiverMock.swift in Sources */,
 				CCE4ABD122E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
 				CCE4ABB222E3EDF300DA4F80 /* PublicImagesFetcherMock.swift in Sources */,
 				CCE4ABC822E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
+				CCE4ABE622E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
 				CCE4ABCC22E3F18500DA4F80 /* QueryFixture.swift in Sources */,
 				CCE4AB9122E3CB3700DA4F80 /* ImageUrls.swift in Sources */,
 				CCE4ABA322E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift in Sources */,
 				CCE4ABBC22E3EF4E00DA4F80 /* Query.swift in Sources */,
+				CCE4ABD822E4D48B00DA4F80 /* ImageInfoFetcherMockForFailure.swift in Sources */,
 				CCE4AB8B22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
+				CCE4ABEC22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
 				CCE4ABA122E3CC8E00DA4F80 /* GetImageUrlsTests.swift in Sources */,
 				CCE4AB9B22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
+				CCE4ABDC22E4D4E300DA4F80 /* ImageInfoFixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
