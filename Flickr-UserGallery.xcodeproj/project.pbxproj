@@ -31,6 +31,23 @@
 		CCE4ABAA22E3CD4000DA4F80 /* ImageDetailsFetcherMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABA922E3CD4000DA4F80 /* ImageDetailsFetcherMockForFailure.swift */; };
 		CCE4ABAC22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABAB22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift */; };
 		CCE4ABAD22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABAB22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift */; };
+		CCE4ABB022E3E8A700DA4F80 /* FetchPublicImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABAF22E3E8A700DA4F80 /* FetchPublicImagesTests.swift */; };
+		CCE4ABB222E3EDF300DA4F80 /* PublicImagesFetcherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABB122E3EDF300DA4F80 /* PublicImagesFetcherMock.swift */; };
+		CCE4ABB522E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABB422E3EE7E00DA4F80 /* PublicImagesFetcher.swift */; };
+		CCE4ABB622E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABB422E3EE7E00DA4F80 /* PublicImagesFetcher.swift */; };
+		CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABBA22E3EF4E00DA4F80 /* Query.swift */; };
+		CCE4ABBC22E3EF4E00DA4F80 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABBA22E3EF4E00DA4F80 /* Query.swift */; };
+		CCE4ABBE22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABBD22E3EF9E00DA4F80 /* ImageSummary.swift */; };
+		CCE4ABBF22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABBD22E3EF9E00DA4F80 /* ImageSummary.swift */; };
+		CCE4ABC122E3F04400DA4F80 /* PublicImagesReceiverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABC022E3F04400DA4F80 /* PublicImagesReceiverMock.swift */; };
+		CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABC322E3F0B000DA4F80 /* PublicImagesReceiver.swift */; };
+		CCE4ABC522E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABC322E3F0B000DA4F80 /* PublicImagesReceiver.swift */; };
+		CCE4ABC722E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABC622E3F0DC00DA4F80 /* FetchPublicImages.swift */; };
+		CCE4ABC822E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABC622E3F0DC00DA4F80 /* FetchPublicImages.swift */; };
+		CCE4ABCC22E3F18500DA4F80 /* QueryFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCB22E3F18500DA4F80 /* QueryFixture.swift */; };
+		CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCD22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift */; };
+		CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */; };
+		CCE4ABD122E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +92,17 @@
 		CCE4ABA722E3CD2400DA4F80 /* ImageDetailsReceiverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsReceiverMock.swift; sourceTree = "<group>"; };
 		CCE4ABA922E3CD4000DA4F80 /* ImageDetailsFetcherMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsFetcherMockForFailure.swift; sourceTree = "<group>"; };
 		CCE4ABAB22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsFetcherError.swift; sourceTree = "<group>"; };
+		CCE4ABAF22E3E8A700DA4F80 /* FetchPublicImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPublicImagesTests.swift; sourceTree = "<group>"; };
+		CCE4ABB122E3EDF300DA4F80 /* PublicImagesFetcherMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesFetcherMock.swift; sourceTree = "<group>"; };
+		CCE4ABB422E3EE7E00DA4F80 /* PublicImagesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesFetcher.swift; sourceTree = "<group>"; };
+		CCE4ABBA22E3EF4E00DA4F80 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		CCE4ABBD22E3EF9E00DA4F80 /* ImageSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSummary.swift; sourceTree = "<group>"; };
+		CCE4ABC022E3F04400DA4F80 /* PublicImagesReceiverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesReceiverMock.swift; sourceTree = "<group>"; };
+		CCE4ABC322E3F0B000DA4F80 /* PublicImagesReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesReceiver.swift; sourceTree = "<group>"; };
+		CCE4ABC622E3F0DC00DA4F80 /* FetchPublicImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPublicImages.swift; sourceTree = "<group>"; };
+		CCE4ABCB22E3F18500DA4F80 /* QueryFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryFixture.swift; sourceTree = "<group>"; };
+		CCE4ABCD22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesFetcherMockForFailure.swift; sourceTree = "<group>"; };
+		CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicImagesFetcherError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +186,7 @@
 		CCE4AB8622E3CA5500DA4F80 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABB722E3EEF300DA4F80 /* Gallery */,
 				CCE4AB8C22E3CAE200DA4F80 /* Image */,
 				CCE4AB8722E3CA6900DA4F80 /* Shared */,
 			);
@@ -219,6 +248,7 @@
 		CCE4AB9C22E3CC4300DA4F80 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ABC222E3F07600DA4F80 /* Gallery */,
 				CCE4AB9D22E3CC5000DA4F80 /* Image */,
 			);
 			path = Core;
@@ -258,6 +288,79 @@
 				CCE4ABA522E3CCE700DA4F80 /* ImageDetailsFixture.swift */,
 			);
 			path = Fixture;
+			sourceTree = "<group>";
+		};
+		CCE4ABAE22E3E87900DA4F80 /* FetchPublicImages */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABAF22E3E8A700DA4F80 /* FetchPublicImagesTests.swift */,
+				CCE4ABB122E3EDF300DA4F80 /* PublicImagesFetcherMock.swift */,
+				CCE4ABCD22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift */,
+				CCE4ABC022E3F04400DA4F80 /* PublicImagesReceiverMock.swift */,
+			);
+			path = FetchPublicImages;
+			sourceTree = "<group>";
+		};
+		CCE4ABB322E3EE5D00DA4F80 /* FetchPublicImages */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABC622E3F0DC00DA4F80 /* FetchPublicImages.swift */,
+				CCE4ABB422E3EE7E00DA4F80 /* PublicImagesFetcher.swift */,
+				CCE4ABCF22E3F24A00DA4F80 /* PublicImagesFetcherError.swift */,
+				CCE4ABC322E3F0B000DA4F80 /* PublicImagesReceiver.swift */,
+			);
+			path = FetchPublicImages;
+			sourceTree = "<group>";
+		};
+		CCE4ABB722E3EEF300DA4F80 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABB822E3EEFB00DA4F80 /* Model */,
+				CCE4ABB922E3EF0400DA4F80 /* UseCase */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		CCE4ABB822E3EEFB00DA4F80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABBD22E3EF9E00DA4F80 /* ImageSummary.swift */,
+				CCE4ABBA22E3EF4E00DA4F80 /* Query.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCE4ABB922E3EF0400DA4F80 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABB322E3EE5D00DA4F80 /* FetchPublicImages */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CCE4ABC222E3F07600DA4F80 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABC922E3F14F00DA4F80 /* Fixture */,
+				CCE4ABCA22E3F15900DA4F80 /* UseCase */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		CCE4ABC922E3F14F00DA4F80 /* Fixture */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABCB22E3F18500DA4F80 /* QueryFixture.swift */,
+			);
+			path = Fixture;
+			sourceTree = "<group>";
+		};
+		CCE4ABCA22E3F15900DA4F80 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ABAE22E3E87900DA4F80 /* FetchPublicImages */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,14 +494,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE4ABC722E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
+				CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AB5A22E3C6E600DA4F80 /* ViewController.swift in Sources */,
 				CCE4AB5822E3C6E600DA4F80 /* AppDelegate.swift in Sources */,
+				CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4AB9022E3CB3700DA4F80 /* ImageDetails.swift in Sources */,
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4AB9722E3CB7E00DA4F80 /* ImageDetailsFetcher.swift in Sources */,
 				CCE4ABAC22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift in Sources */,
+				CCE4ABB522E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
+				CCE4ABBE22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageDetailsReceiver.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* ObtainImageDetails.swift in Sources */,
+				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,12 +518,23 @@
 				CCE4AB9822E3CB7E00DA4F80 /* ImageDetailsFetcher.swift in Sources */,
 				CCE4ABA822E3CD2400DA4F80 /* ImageDetailsReceiverMock.swift in Sources */,
 				CCE4ABAA22E3CD4000DA4F80 /* ImageDetailsFetcherMockForFailure.swift in Sources */,
+				CCE4ABBF22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
 				CCE4ABA622E3CCE700DA4F80 /* ImageDetailsFixture.swift in Sources */,
+				CCE4ABB022E3E8A700DA4F80 /* FetchPublicImagesTests.swift in Sources */,
 				CCE4AB6D22E3C6E800DA4F80 /* Flickr_UserGalleryTests.swift in Sources */,
+				CCE4ABB622E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
 				CCE4ABAD22E3CD6C00DA4F80 /* ImageDetailsFetcherError.swift in Sources */,
+				CCE4ABC522E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
+				CCE4ABC122E3F04400DA4F80 /* PublicImagesReceiverMock.swift in Sources */,
+				CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */,
 				CCE4AB9522E3CB6500DA4F80 /* ObtainImageDetails.swift in Sources */,
+				CCE4ABD122E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
+				CCE4ABB222E3EDF300DA4F80 /* PublicImagesFetcherMock.swift in Sources */,
+				CCE4ABC822E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
+				CCE4ABCC22E3F18500DA4F80 /* QueryFixture.swift in Sources */,
 				CCE4AB9122E3CB3700DA4F80 /* ImageDetails.swift in Sources */,
 				CCE4ABA322E3CCA800DA4F80 /* ImageDetailsFetcherMock.swift in Sources */,
+				CCE4ABBC22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AB8B22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4ABA122E3CC8E00DA4F80 /* ObtainImageDetailsTests.swift in Sources */,
 				CCE4AB9B22E3CB9A00DA4F80 /* ImageDetailsReceiver.swift in Sources */,
