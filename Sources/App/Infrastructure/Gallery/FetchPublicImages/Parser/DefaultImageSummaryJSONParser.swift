@@ -7,7 +7,7 @@
 //
 
 final class DefaultImageSummaryJSONParser: ImageSummaryJSONParser {
-    func parse(from json: [String : Any]) throws -> [ImageSummary] {
+    func parse(from json: [String: Any]) throws -> [ImageSummary] {
         guard let photosRoot = json["photos"] as? [String: Any],
             let photos = photosRoot["photo"] as? [[String: Any]] else {
                 throw ImageSummaryJSONParserError.errorParsingJSONtoImageSummaries
