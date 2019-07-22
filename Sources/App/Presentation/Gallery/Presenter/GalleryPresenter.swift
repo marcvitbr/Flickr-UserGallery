@@ -16,7 +16,7 @@ final class GalleryPresenter {
         self.fetchExecutor = fetchExecutor
     }
 
-    func searchImages(with query: Query) {
+    func fetchImages(with query: Query) {
         self.screen.clearResultsView()
 
         guard let images = try? self.fetchExecutor.executeFetchPublicImages(with: query) else {

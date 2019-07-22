@@ -35,8 +35,8 @@ final class GalleryPresenterTests: XCTestCase {
         let presenter = GalleryPresenter(screen: self.screenMock,
                                          fetchExecutor: executor)
 
-        presenter.searchImages(with: Query(userId: self.userId,
-                                           page: 1))
+        presenter.fetchImages(with: Query(userId: self.userId,
+                                          page: 1))
 
         XCTAssertEqual(self.screenMock.callsToClearResultsView, 1)
 
