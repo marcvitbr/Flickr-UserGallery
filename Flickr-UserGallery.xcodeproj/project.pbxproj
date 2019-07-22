@@ -841,9 +841,8 @@
 		CCE4AC6F22E556FC00DA4F80 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				CCE4AC7222E5571D00DA4F80 /* Controller */,
-				CCE4AC7122E5571800DA4F80 /* Presenter */,
-				CCE4AC7022E5571200DA4F80 /* View */,
+				CCE4AC9422E6092C00DA4F80 /* Cell */,
+				CCE4AC9522E6093900DA4F80 /* Details */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -923,6 +922,47 @@
 				CCE4AB6022E3C6E800DA4F80 /* LaunchScreen.storyboard */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		CCE4AC9422E6092C00DA4F80 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC7222E5571D00DA4F80 /* Controller */,
+				CCE4AC7122E5571800DA4F80 /* Presenter */,
+				CCE4AC7022E5571200DA4F80 /* View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CCE4AC9522E6093900DA4F80 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC9622E6096000DA4F80 /* Controller */,
+				CCE4AC9722E6096700DA4F80 /* Presenter */,
+				CCE4AC9822E6096B00DA4F80 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CCE4AC9622E6096000DA4F80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CCE4AC9722E6096700DA4F80 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCE4AC9822E6096B00DA4F80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

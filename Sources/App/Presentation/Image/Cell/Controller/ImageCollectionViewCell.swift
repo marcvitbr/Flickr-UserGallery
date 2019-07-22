@@ -71,7 +71,8 @@ class ImageCollectionViewCell: UICollectionViewCell, DependencyReceiver {
                 return
             }
 
-            self?.imageView.kf.setImage(with: url)
+            self?.imageView.kf.setImage(with: url,
+                                        options: [.transition(.fade(0.5))])
         }
     }
 }

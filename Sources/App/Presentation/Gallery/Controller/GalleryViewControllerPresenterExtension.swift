@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension GalleryViewController: GalleryScreen {
     func clearResultsView() {
@@ -47,5 +48,12 @@ extension GalleryViewController: GalleryScreen {
     }
 
     func presentErrorWhenFetchingImages() {
+        let errorMessage = "Sorry, something went wrong when fetching the images. Please try again."
+
+        let alert = UIAlertController(title: "Oops!",
+                                      message: errorMessage,
+                                      preferredStyle: .alert)
+
+        self.present(alert, animated: true, completion: nil)
     }
 }
