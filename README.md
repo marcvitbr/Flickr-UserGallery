@@ -12,10 +12,10 @@ The standard being used is the proposed by the [SwiftLint](https://github.com/re
 
 ### Tools/Libraries
 
-- Carthage: Package manager;
-- SwiftLint: Linter;
-- Alamofire: HTTP requests;
-- Kingfisher: Image downloading and caching;
+- Carthage: Package manager. Has a bit of configuration involved, but it's less intrusive than CocoaPods;
+- SwiftLint: Linter. Complete, well documented, and has a comprehensive toolchain;
+- Alamofire: Networking. Has a clean interface, and hides a lot of boilerplate. Might be an overkill for simple cases, but I decided to go with it anyway;
+- Kingfisher: Image downloading and caching. Powerful and easy to use;
 
 ### Environment
 
