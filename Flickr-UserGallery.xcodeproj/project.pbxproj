@@ -130,6 +130,18 @@
 		CCE4AC8D22E55E1900DA4F80 /* GalleryViewControllerFlowLayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC8C22E55E1900DA4F80 /* GalleryViewControllerFlowLayoutExtension.swift */; };
 		CCE4AC8F22E55E3E00DA4F80 /* GalleryViewControllerPresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC8E22E55E3E00DA4F80 /* GalleryViewControllerPresenterExtension.swift */; };
 		CCE4AC9122E55E9200DA4F80 /* ImageCollectionLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC9022E55E9200DA4F80 /* ImageCollectionLoadingFooterView.swift */; };
+		CCE4AC9A22E6116000DA4F80 /* ImageDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE4AC9922E6116000DA4F80 /* ImageDetails.storyboard */; };
+		CCE4AC9C22E6117500DA4F80 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC9B22E6117500DA4F80 /* ImageDetailsViewController.swift */; };
+		CCE4AC9E22E61D1B00DA4F80 /* ImageDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC9D22E61D1B00DA4F80 /* ImageDetailsPresenter.swift */; };
+		CCE4AC9F22E61D1B00DA4F80 /* ImageDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AC9D22E61D1B00DA4F80 /* ImageDetailsPresenter.swift */; };
+		CCE4ACA422E61D8800DA4F80 /* ImageDetailsScreenMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACA322E61D8800DA4F80 /* ImageDetailsScreenMock.swift */; };
+		CCE4ACA622E61EC100DA4F80 /* ImageDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACA522E61EC100DA4F80 /* ImageDetailsScreen.swift */; };
+		CCE4ACA722E61EC100DA4F80 /* ImageDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACA522E61EC100DA4F80 /* ImageDetailsScreen.swift */; };
+		CCE4ACA922E61EF300DA4F80 /* ImageDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACA822E61EF300DA4F80 /* ImageDetailsPresenterTests.swift */; };
+		CCE4ACAC22E6204200DA4F80 /* GetImageInfoExecutorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACAB22E6204200DA4F80 /* GetImageInfoExecutorMock.swift */; };
+		CCE4ACAE22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACAD22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift */; };
+		CCE4ACB022E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACAF22E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift */; };
+		CCE4ACB322E629F300DA4F80 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACB222E629F300DA4F80 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -244,6 +256,16 @@
 		CCE4AC8C22E55E1900DA4F80 /* GalleryViewControllerFlowLayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerFlowLayoutExtension.swift; sourceTree = "<group>"; };
 		CCE4AC8E22E55E3E00DA4F80 /* GalleryViewControllerPresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerPresenterExtension.swift; sourceTree = "<group>"; };
 		CCE4AC9022E55E9200DA4F80 /* ImageCollectionLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionLoadingFooterView.swift; sourceTree = "<group>"; };
+		CCE4AC9922E6116000DA4F80 /* ImageDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageDetails.storyboard; sourceTree = "<group>"; };
+		CCE4AC9B22E6117500DA4F80 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
+		CCE4AC9D22E61D1B00DA4F80 /* ImageDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsPresenter.swift; sourceTree = "<group>"; };
+		CCE4ACA322E61D8800DA4F80 /* ImageDetailsScreenMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsScreenMock.swift; sourceTree = "<group>"; };
+		CCE4ACA522E61EC100DA4F80 /* ImageDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsScreen.swift; sourceTree = "<group>"; };
+		CCE4ACA822E61EF300DA4F80 /* ImageDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		CCE4ACAB22E6204200DA4F80 /* GetImageInfoExecutorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageInfoExecutorMock.swift; sourceTree = "<group>"; };
+		CCE4ACAD22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageInfoExecutorMockForFailure.swift; sourceTree = "<group>"; };
+		CCE4ACAF22E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewControllerPresenterExtension.swift; sourceTree = "<group>"; };
+		CCE4ACB222E629F300DA4F80 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -876,7 +898,8 @@
 		CCE4AC7722E5580F00DA4F80 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				CCE4AC7822E5582100DA4F80 /* Presenter */,
+				CCE4ACA022E61D4600DA4F80 /* Cell */,
+				CCE4ACA122E61D5300DA4F80 /* Details */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -893,6 +916,7 @@
 		CCE4AC8022E558FB00DA4F80 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ACAA22E61FF100DA4F80 /* GetImageInfo */,
 				CCE4AC8122E5591600DA4F80 /* GetImageUrls */,
 			);
 			path = Image;
@@ -918,6 +942,7 @@
 		CCE4AC9322E5604E00DA4F80 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4ACB122E629DD00DA4F80 /* Alert */,
 				CCE4AB5E22E3C6E800DA4F80 /* Assets.xcassets */,
 				CCE4AB6022E3C6E800DA4F80 /* LaunchScreen.storyboard */,
 			);
@@ -947,6 +972,8 @@
 		CCE4AC9622E6096000DA4F80 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4AC9B22E6117500DA4F80 /* ImageDetailsViewController.swift */,
+				CCE4ACAF22E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -954,6 +981,8 @@
 		CCE4AC9722E6096700DA4F80 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4AC9D22E61D1B00DA4F80 /* ImageDetailsPresenter.swift */,
+				CCE4ACA522E61EC100DA4F80 /* ImageDetailsScreen.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -961,8 +990,51 @@
 		CCE4AC9822E6096B00DA4F80 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4AC9922E6116000DA4F80 /* ImageDetails.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CCE4ACA022E61D4600DA4F80 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4AC7822E5582100DA4F80 /* Presenter */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CCE4ACA122E61D5300DA4F80 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACA222E61D6100DA4F80 /* Presenter */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CCE4ACA222E61D6100DA4F80 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACA322E61D8800DA4F80 /* ImageDetailsScreenMock.swift */,
+				CCE4ACA822E61EF300DA4F80 /* ImageDetailsPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CCE4ACAA22E61FF100DA4F80 /* GetImageInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACAB22E6204200DA4F80 /* GetImageInfoExecutorMock.swift */,
+				CCE4ACAD22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift */,
+			);
+			path = GetImageInfo;
+			sourceTree = "<group>";
+		};
+		CCE4ACB122E629DD00DA4F80 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACB222E629F300DA4F80 /* Alerts.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1074,6 +1146,7 @@
 				CCE4AC5222E5326300DA4F80 /* Gallery.storyboard in Resources */,
 				CCE4AB5F22E3C6E800DA4F80 /* Assets.xcassets in Resources */,
 				CCE4AC7622E5574700DA4F80 /* ImageCollectionViewCell.xib in Resources */,
+				CCE4AC9A22E6116000DA4F80 /* ImageDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1144,6 +1217,7 @@
 				CCE4AC0122E500F800DA4F80 /* HTTPClientError.swift in Sources */,
 				CCE4ABDE22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4AC1E22E5208000DA4F80 /* ImageUrlsJSONParser.swift in Sources */,
+				CCE4AC9E22E61D1B00DA4F80 /* ImageDetailsPresenter.swift in Sources */,
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4AC3D22E52B4600DA4F80 /* GetImageUrlsExecutor.swift in Sources */,
 				CCE4AC5522E536E800DA4F80 /* GalleryViewController.swift in Sources */,
@@ -1157,11 +1231,13 @@
 				CCE4AC3A22E52B3300DA4F80 /* DefaultGetImageInfoExecutor.swift in Sources */,
 				CCE4AC2922E5276D00DA4F80 /* ImageSummaryJSONParserError.swift in Sources */,
 				CCE4AC4C22E52B8900DA4F80 /* DefaultFetchPublicImagesExecutor.swift in Sources */,
+				CCE4ACA622E61EC100DA4F80 /* ImageDetailsScreen.swift in Sources */,
 				CCE4AC2B22E527A700DA4F80 /* DefaultImageSummaryJSONParser.swift in Sources */,
 				CCE4AC7E22E5587E00DA4F80 /* ImageCell.swift in Sources */,
 				CCE4AB9722E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
 				CCE4AC8A22E55D9B00DA4F80 /* ImageCollectionViewCellPresenterExtension.swift in Sources */,
 				CCE4AC3722E52B2600DA4F80 /* GetImageInfoExecutorError.swift in Sources */,
+				CCE4ACB322E629F300DA4F80 /* Alerts.swift in Sources */,
 				CCE4ABAC22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */,
 				CCE4ABB522E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
 				CCE4ABBE22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
@@ -1170,8 +1246,10 @@
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4AC4322E52B6000DA4F80 /* DefaultGetImageUrlsExecutor.swift in Sources */,
 				CCE4AB9422E3CB6500DA4F80 /* GetImageUrls.swift in Sources */,
+				CCE4ACB022E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift in Sources */,
 				CCE4ABFE22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
 				CCE4AC1422E5116000DA4F80 /* DefaultImageInfoFetcher.swift in Sources */,
+				CCE4AC9C22E6117500DA4F80 /* ImageDetailsViewController.swift in Sources */,
 				CCE4AC0C22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4AC3422E52B1600DA4F80 /* GetImageInfoExecutor.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
@@ -1196,6 +1274,8 @@
 				CCE4AC3B22E52B3300DA4F80 /* DefaultGetImageInfoExecutor.swift in Sources */,
 				CCE4AC8522E55A2000DA4F80 /* GetImageUrlsExecutorMockForFailure.swift in Sources */,
 				CCE4AC4A22E52B7E00DA4F80 /* FetchPublicImagesExecutorError.swift in Sources */,
+				CCE4ACA422E61D8800DA4F80 /* ImageDetailsScreenMock.swift in Sources */,
+				CCE4ACA922E61EF300DA4F80 /* ImageDetailsPresenterTests.swift in Sources */,
 				CCE4AC8822E55A9C00DA4F80 /* ImageCellPresenter.swift in Sources */,
 				CCE4AC6C22E53A3300DA4F80 /* FetchPublicImagesExecutorMockForFailure.swift in Sources */,
 				CCE4AC3522E52B1600DA4F80 /* GetImageInfoExecutor.swift in Sources */,
@@ -1205,6 +1285,7 @@
 				CCE4ABBF22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
 				CCE4ABA622E3CCE700DA4F80 /* ImageUrlsFixture.swift in Sources */,
 				CCE4ABE322E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */,
+				CCE4ACA722E61EC100DA4F80 /* ImageDetailsScreen.swift in Sources */,
 				CCE4AC4722E52B7300DA4F80 /* FetchPublicImagesExecutor.swift in Sources */,
 				CCE4ABB022E3E8A700DA4F80 /* FetchPublicImagesTests.swift in Sources */,
 				CCE4AC5C22E5384900DA4F80 /* GalleryScreen.swift in Sources */,
@@ -1216,6 +1297,7 @@
 				CCE4ABC522E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4AC3822E52B2600DA4F80 /* GetImageInfoExecutorError.swift in Sources */,
 				CCE4ABC122E3F04400DA4F80 /* PublicImagesReceiverMock.swift in Sources */,
+				CCE4ACAC22E6204200DA4F80 /* GetImageInfoExecutorMock.swift in Sources */,
 				CCE4ABDF22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */,
 				CCE4ABD422E4D45300DA4F80 /* GetImageInfoTests.swift in Sources */,
@@ -1230,6 +1312,7 @@
 				CCE4AC0D22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4ABC822E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
 				CCE4AC6A22E539E400DA4F80 /* FetchPublicImagesExecutorMock.swift in Sources */,
+				CCE4ACAE22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift in Sources */,
 				CCE4AC7F22E5587E00DA4F80 /* ImageCell.swift in Sources */,
 				CCE4ABE622E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
 				CCE4ABCC22E3F18500DA4F80 /* QueryFixture.swift in Sources */,
@@ -1241,6 +1324,7 @@
 				CCE4ABFF22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
 				CCE4AB8B22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
 				CCE4ABEC22E4D81A00DA4F80 /* ImageInfoReceiver.swift in Sources */,
+				CCE4AC9F22E61D1B00DA4F80 /* ImageDetailsPresenter.swift in Sources */,
 				CCE4ABA122E3CC8E00DA4F80 /* GetImageUrlsTests.swift in Sources */,
 				CCE4ABF222E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,
 				CCE4AB9B22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,

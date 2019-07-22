@@ -50,9 +50,7 @@ extension GalleryViewController: GalleryScreen {
     func presentErrorWhenFetchingImages() {
         let errorMessage = "Sorry, something went wrong when fetching the images. Please try again."
 
-        let alert = UIAlertController(title: "Oops!",
-                                      message: errorMessage,
-                                      preferredStyle: .alert)
+        let alert = Alerts.genericAlert(message: errorMessage)
 
         self.present(alert, animated: true, completion: nil)
     }

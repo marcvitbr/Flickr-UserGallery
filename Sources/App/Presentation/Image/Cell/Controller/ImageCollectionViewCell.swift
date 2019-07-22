@@ -52,15 +52,16 @@ class ImageCollectionViewCell: UICollectionViewCell, DependencyReceiver {
     }
 
     func openImage(on viewController: UIViewController) {
-//        guard let imageDetails = self.imageDetails else {
-//            return
-//        }
-//
-//        guard let fullScreen = FullScreenImageViewController.new(with: imageDetails.largeUrlPath) else {
-//            return
-//        }
-//
-//        viewController.present(fullScreen, animated: true, completion: nil)
+        guard let photoId = self.photoId,
+            let imageUrlPath = self.imageUrls?.largeUrlPath,
+            let detailsViewController = ImageDetailsViewController.new(photoId: photoId,
+                                                                       imageUrlPath: imageUrlPath) else {
+            return
+        }
+
+        viewController.present(detailsViewController,
+                               animated: true,
+                               completion: nil)
     }
 
     internal func updateImage(_ imageUrls: ImageUrls) {
