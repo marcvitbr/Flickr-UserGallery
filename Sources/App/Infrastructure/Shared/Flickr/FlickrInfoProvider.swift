@@ -9,7 +9,7 @@
 import Foundation
 
 final class FlickrInfoProvider {
-    private static let apiKey = "f9cc014fa76b098f9e82f1c288379ea1"
+    private static let apiKey = "6663ec0a677ebe14ea76a3607c6c6cd6"
 
     static let apiURL = URL(string: "https://api.flickr.com/services/rest")!
 
