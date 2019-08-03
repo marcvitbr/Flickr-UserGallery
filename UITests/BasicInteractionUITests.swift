@@ -19,6 +19,8 @@ class BasicInteractionUITests: XCTestCase {
     }
 
     func testBasicAppInteraction() {
+        self.verifySearchBarAndTypeUserNameAndSearch()
+
         self.verifyGalleryAndTapImage()
 
         self.assertExists(in: self.app.images, identifier: "FullScreenImageView")
@@ -31,28 +33,32 @@ class BasicInteractionUITests: XCTestCase {
         self.verifyCloseButtonAndTapIt()
     }
 
-    private func verifyGalleryAndTapImage() {
-        let collectionView = self.app.collectionViews.element
-        let collectionViewExists = collectionView.waitForExistence(timeout: 5)
-        XCTAssert(collectionViewExists)
+    private func verifySearchBarAndTypeUserNameAndSearch() {
+        let searchField = self.assertExists(in: self.app.searchFields)
 
-        let firstCell = collectionView.cells.firstMatch
-        let firstCellExists = firstCell.waitForExistence(timeout: 10)
-        XCTAssert(firstCellExists)
+        searchField.tap()
+        searchField.typeText("eyetwist")
+
+        let searchButton = self.assertExists(in: self.app.buttons, identifier: "Search")
+        searchButton.tap()
+    }
+
+    private func verifyGalleryAndTapImage() {
+        let collectionView = self.assertExists(in: self.app.collectionViews)
+        let firstCell = self.assertExists(in: collectionView.cells).firstMatch
         firstCell.tap()
     }
 
-    private func assertExists(in query: XCUIElementQuery, identifier: String) {
-        let element = query[identifier]
-        let elementExists = element.waitForExistence(timeout: 2)
-        XCTAssert(elementExists, "Failed with element \(identifier)")
+    private func verifyCloseButtonAndTapIt() {
+        let closeButton = self.assertExists(in: self.app.buttons, identifier: "Close")
+        closeButton.tap()
     }
 
-    private func verifyCloseButtonAndTapIt() {
-        let closeButton = self.app.buttons.firstMatch
-        let closeButtonExists = closeButton.waitForExistence(timeout: 5)
-        XCTAssert(closeButtonExists)
-
-        closeButton.tap()
+    @discardableResult
+    private func assertExists(in query: XCUIElementQuery, identifier: String = "") -> XCUIElement {
+        let element = identifier.isEmpty ? query.element : query[identifier]
+        let elementExists = element.waitForExistence(timeout: 2)
+        XCTAssert(elementExists, "Failed with element \(identifier)")
+        return element
     }
 }
