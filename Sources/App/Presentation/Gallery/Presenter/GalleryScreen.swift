@@ -9,7 +9,11 @@
 protocol GalleryScreen {
     func clearResultsView()
 
+    func prepareScreenForFetchImages(of user: User)
+
     func presentImages(_ images: [ImageSummary])
 
     func presentErrorWhenFetchingImages()
+
+    func presentErrorWhenFindingUser()
 }

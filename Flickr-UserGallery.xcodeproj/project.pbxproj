@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC61B9BB22EE047D0095FEAF /* FindUserByUsernameExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61B9BA22EE047D0095FEAF /* FindUserByUsernameExecutor.swift */; };
+		CC61B9BC22EE047D0095FEAF /* FindUserByUsernameExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61B9BA22EE047D0095FEAF /* FindUserByUsernameExecutor.swift */; };
+		CC61B9BE22EE04930095FEAF /* FindUserByUsernameExecutorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61B9BD22EE04930095FEAF /* FindUserByUsernameExecutorError.swift */; };
+		CC61B9BF22EE04930095FEAF /* FindUserByUsernameExecutorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61B9BD22EE04930095FEAF /* FindUserByUsernameExecutorError.swift */; };
+		CC61B9C122EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61B9C022EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift */; };
+		CC61B9C222EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61B9C022EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift */; };
+		CCAE480D22F10013002F904A /* DefaultUserFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE480C22F10013002F904A /* DefaultUserFinder.swift */; };
+		CCAE480F22F10055002F904A /* UserJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE480E22F10055002F904A /* UserJSONParser.swift */; };
+		CCAE481122F1012A002F904A /* UserJSONParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE481022F1012A002F904A /* UserJSONParserError.swift */; };
+		CCAE481322F10149002F904A /* DefaultUserJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE481222F10149002F904A /* DefaultUserJSONParser.swift */; };
+		CCAE481522F27C56002F904A /* GalleryViewControllerSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE481422F27C56002F904A /* GalleryViewControllerSearchBarExtension.swift */; };
+		CCAE481922F27FAF002F904A /* FindUserByUsernameExecutorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE481822F27FAF002F904A /* FindUserByUsernameExecutorMock.swift */; };
+		CCAE481B22F492B5002F904A /* FindUserByUsernameExecutorMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE481A22F492B5002F904A /* FindUserByUsernameExecutorMockForFailure.swift */; };
+		CCAE481E22F4F7EA002F904A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCAE482022F4F7EA002F904A /* Localizable.strings */; };
+		CCAE482522F4F913002F904A /* StringLocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE482422F4F913002F904A /* StringLocalizationExtension.swift */; };
 		CCE4AB5822E3C6E600DA4F80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4AB5722E3C6E600DA4F80 /* AppDelegate.swift */; };
 		CCE4AB5F22E3C6E800DA4F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE4AB5E22E3C6E800DA4F80 /* Assets.xcassets */; };
 		CCE4AB6222E3C6E800DA4F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE4AB6022E3C6E800DA4F80 /* LaunchScreen.storyboard */; };
@@ -141,6 +156,21 @@
 		CCE4ACAE22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACAD22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift */; };
 		CCE4ACB022E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACAF22E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift */; };
 		CCE4ACB322E629F300DA4F80 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACB222E629F300DA4F80 /* Alerts.swift */; };
+		CCE4ACC822E88F5C00DA4F80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACC722E88F5C00DA4F80 /* User.swift */; };
+		CCE4ACC922E88F5C00DA4F80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACC722E88F5C00DA4F80 /* User.swift */; };
+		CCE4ACD022E88FB700DA4F80 /* UserFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACCF22E88FB700DA4F80 /* UserFixture.swift */; };
+		CCE4ACD222E88FED00DA4F80 /* FindUserByUsernameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD122E88FED00DA4F80 /* FindUserByUsernameTests.swift */; };
+		CCE4ACD422E8903C00DA4F80 /* FindUserByUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD322E8903C00DA4F80 /* FindUserByUsername.swift */; };
+		CCE4ACD522E8903C00DA4F80 /* FindUserByUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD322E8903C00DA4F80 /* FindUserByUsername.swift */; };
+		CCE4ACD722E8905400DA4F80 /* UserFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD622E8905400DA4F80 /* UserFinder.swift */; };
+		CCE4ACD822E8905400DA4F80 /* UserFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD622E8905400DA4F80 /* UserFinder.swift */; };
+		CCE4ACDA22E8906C00DA4F80 /* UserReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD922E8906C00DA4F80 /* UserReceiver.swift */; };
+		CCE4ACDB22E8906C00DA4F80 /* UserReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACD922E8906C00DA4F80 /* UserReceiver.swift */; };
+		CCE4ACDD22E8908E00DA4F80 /* UserFinderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACDC22E8908E00DA4F80 /* UserFinderError.swift */; };
+		CCE4ACDE22E8908E00DA4F80 /* UserFinderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACDC22E8908E00DA4F80 /* UserFinderError.swift */; };
+		CCE4ACE022E890CD00DA4F80 /* UserFinderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACDF22E890CD00DA4F80 /* UserFinderMock.swift */; };
+		CCE4ACE222E890F600DA4F80 /* UserFinderMockForFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACE122E890F600DA4F80 /* UserFinderMockForFailure.swift */; };
+		CCE4ACE422E8915600DA4F80 /* UserReceiverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4ACE322E8915600DA4F80 /* UserReceiverMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +191,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC61B9BA22EE047D0095FEAF /* FindUserByUsernameExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserByUsernameExecutor.swift; sourceTree = "<group>"; };
+		CC61B9BD22EE04930095FEAF /* FindUserByUsernameExecutorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserByUsernameExecutorError.swift; sourceTree = "<group>"; };
+		CC61B9C022EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFindUserByUsernameExecutor.swift; sourceTree = "<group>"; };
+		CCAE480C22F10013002F904A /* DefaultUserFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserFinder.swift; sourceTree = "<group>"; };
+		CCAE480E22F10055002F904A /* UserJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJSONParser.swift; sourceTree = "<group>"; };
+		CCAE481022F1012A002F904A /* UserJSONParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJSONParserError.swift; sourceTree = "<group>"; };
+		CCAE481222F10149002F904A /* DefaultUserJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserJSONParser.swift; sourceTree = "<group>"; };
+		CCAE481422F27C56002F904A /* GalleryViewControllerSearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerSearchBarExtension.swift; sourceTree = "<group>"; };
+		CCAE481822F27FAF002F904A /* FindUserByUsernameExecutorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserByUsernameExecutorMock.swift; sourceTree = "<group>"; };
+		CCAE481A22F492B5002F904A /* FindUserByUsernameExecutorMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserByUsernameExecutorMockForFailure.swift; sourceTree = "<group>"; };
+		CCAE481F22F4F7EA002F904A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CCAE482122F4F80E002F904A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CCAE482222F4F80E002F904A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CCAE482422F4F913002F904A /* StringLocalizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizationExtension.swift; sourceTree = "<group>"; };
 		CCE4AB5422E3C6E600DA4F80 /* Flickr-UserGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickr-UserGallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE4AB5722E3C6E600DA4F80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE4AB5E22E3C6E800DA4F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +308,16 @@
 		CCE4ACAD22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageInfoExecutorMockForFailure.swift; sourceTree = "<group>"; };
 		CCE4ACAF22E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewControllerPresenterExtension.swift; sourceTree = "<group>"; };
 		CCE4ACB222E629F300DA4F80 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		CCE4ACC722E88F5C00DA4F80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CCE4ACCF22E88FB700DA4F80 /* UserFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFixture.swift; sourceTree = "<group>"; };
+		CCE4ACD122E88FED00DA4F80 /* FindUserByUsernameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserByUsernameTests.swift; sourceTree = "<group>"; };
+		CCE4ACD322E8903C00DA4F80 /* FindUserByUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserByUsername.swift; sourceTree = "<group>"; };
+		CCE4ACD622E8905400DA4F80 /* UserFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinder.swift; sourceTree = "<group>"; };
+		CCE4ACD922E8906C00DA4F80 /* UserReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReceiver.swift; sourceTree = "<group>"; };
+		CCE4ACDC22E8908E00DA4F80 /* UserFinderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinderError.swift; sourceTree = "<group>"; };
+		CCE4ACDF22E890CD00DA4F80 /* UserFinderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinderMock.swift; sourceTree = "<group>"; };
+		CCE4ACE122E890F600DA4F80 /* UserFinderMockForFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinderMockForFailure.swift; sourceTree = "<group>"; };
+		CCE4ACE322E8915600DA4F80 /* UserReceiverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReceiverMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +347,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC61B9B822EE04460095FEAF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CC61B9B922EE04620095FEAF /* FindUserByUsername */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CC61B9B922EE04620095FEAF /* FindUserByUsername */ = {
+			isa = PBXGroup;
+			children = (
+				CC61B9C022EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift */,
+				CC61B9BA22EE047D0095FEAF /* FindUserByUsernameExecutor.swift */,
+				CC61B9BD22EE04930095FEAF /* FindUserByUsernameExecutorError.swift */,
+			);
+			path = FindUserByUsername;
+			sourceTree = "<group>";
+		};
+		CCAE480922F0FFCF002F904A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE480A22F0FFDE002F904A /* FindUserByUsername */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CCAE480A22F0FFDE002F904A /* FindUserByUsername */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE480C22F10013002F904A /* DefaultUserFinder.swift */,
+				CCAE480B22F10004002F904A /* Parser */,
+			);
+			path = FindUserByUsername;
+			sourceTree = "<group>";
+		};
+		CCAE480B22F10004002F904A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE481222F10149002F904A /* DefaultUserJSONParser.swift */,
+				CCAE480E22F10055002F904A /* UserJSONParser.swift */,
+				CCAE481022F1012A002F904A /* UserJSONParserError.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		CCAE481622F27F6C002F904A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE481722F27F87002F904A /* FindUserByUsername */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CCAE481722F27F87002F904A /* FindUserByUsername */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE481822F27FAF002F904A /* FindUserByUsernameExecutorMock.swift */,
+				CCAE481A22F492B5002F904A /* FindUserByUsernameExecutorMockForFailure.swift */,
+			);
+			path = FindUserByUsername;
+			sourceTree = "<group>";
+		};
+		CCAE482322F4F849002F904A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE482422F4F913002F904A /* StringLocalizationExtension.swift */,
+				CCAE482022F4F7EA002F904A /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		CCE4AB4B22E3C6E600DA4F80 = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +474,7 @@
 				CCE4ABB722E3EEF300DA4F80 /* Gallery */,
 				CCE4AB8C22E3CAE200DA4F80 /* Image */,
 				CCE4AB8722E3CA6900DA4F80 /* Shared */,
+				CCE4ACCB22E88F8B00DA4F80 /* User */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -412,6 +538,7 @@
 			children = (
 				CCE4ABC222E3F07600DA4F80 /* Gallery */,
 				CCE4AB9D22E3CC5000DA4F80 /* Image */,
+				CCE4ACC422E88F2D00DA4F80 /* User */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -566,6 +693,7 @@
 				CCE4ABEF22E4FEE900DA4F80 /* Dependency */,
 				CCE4AC2E22E52A9400DA4F80 /* Gallery */,
 				CCE4AC2F22E52A9A00DA4F80 /* Image */,
+				CC61B9B822EE04460095FEAF /* User */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -586,6 +714,7 @@
 				CCE4AC0E22E510F600DA4F80 /* Gallery */,
 				CCE4AC0F22E510FC00DA4F80 /* Image */,
 				CCE4ABFA22E500A600DA4F80 /* Shared */,
+				CCAE480922F0FFCF002F904A /* User */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -655,8 +784,8 @@
 		CCE4AC1122E5113C00DA4F80 /* GetImageInfo */ = {
 			isa = PBXGroup;
 			children = (
-				CCE4AC1522E5147700DA4F80 /* Parser */,
 				CCE4AC1322E5116000DA4F80 /* DefaultImageInfoFetcher.swift */,
+				CCE4AC1522E5147700DA4F80 /* Parser */,
 			);
 			path = GetImageInfo;
 			sourceTree = "<group>";
@@ -664,8 +793,8 @@
 		CCE4AC1222E5114300DA4F80 /* GetImageUrls */ = {
 			isa = PBXGroup;
 			children = (
-				CCE4AC1C22E5203100DA4F80 /* Parser */,
 				CCE4AC2322E520D900DA4F80 /* DefaultImageUrlsFetcher.swift */,
+				CCE4AC1C22E5203100DA4F80 /* Parser */,
 			);
 			path = GetImageUrls;
 			sourceTree = "<group>";
@@ -783,6 +912,7 @@
 				CCE4AC6D22E555A500DA4F80 /* GalleryViewControllerDataSourceExtension.swift */,
 				CCE4AC8C22E55E1900DA4F80 /* GalleryViewControllerFlowLayoutExtension.swift */,
 				CCE4AC8E22E55E3E00DA4F80 /* GalleryViewControllerPresenterExtension.swift */,
+				CCAE481422F27C56002F904A /* GalleryViewControllerSearchBarExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -836,6 +966,7 @@
 			children = (
 				CCE4AC6722E539CB00DA4F80 /* Gallery */,
 				CCE4AC8022E558FB00DA4F80 /* Image */,
+				CCAE481622F27F6C002F904A /* User */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -939,6 +1070,7 @@
 		CCE4AC9322E5604E00DA4F80 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CCAE482322F4F849002F904A /* Localization */,
 				CCE4ACB122E629DD00DA4F80 /* Alert */,
 				CCE4AB5E22E3C6E800DA4F80 /* Assets.xcassets */,
 				CCE4AB6022E3C6E800DA4F80 /* LaunchScreen.storyboard */,
@@ -1034,6 +1166,78 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		CCE4ACC422E88F2D00DA4F80 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACC522E88F3600DA4F80 /* Model */,
+				CCE4ACC622E88F3B00DA4F80 /* UseCase */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CCE4ACC522E88F3600DA4F80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACCF22E88FB700DA4F80 /* UserFixture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCE4ACC622E88F3B00DA4F80 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACCA22E88F7500DA4F80 /* FindUserByUsername */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CCE4ACCA22E88F7500DA4F80 /* FindUserByUsername */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACD122E88FED00DA4F80 /* FindUserByUsernameTests.swift */,
+				CCE4ACDF22E890CD00DA4F80 /* UserFinderMock.swift */,
+				CCE4ACE122E890F600DA4F80 /* UserFinderMockForFailure.swift */,
+				CCE4ACE322E8915600DA4F80 /* UserReceiverMock.swift */,
+			);
+			path = FindUserByUsername;
+			sourceTree = "<group>";
+		};
+		CCE4ACCB22E88F8B00DA4F80 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACCD22E88F9700DA4F80 /* UseCase */,
+				CCE4ACCC22E88F9300DA4F80 /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CCE4ACCC22E88F9300DA4F80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACC722E88F5C00DA4F80 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCE4ACCD22E88F9700DA4F80 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACCE22E88F9B00DA4F80 /* FindUserByUsername */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CCE4ACCE22E88F9B00DA4F80 /* FindUserByUsername */ = {
+			isa = PBXGroup;
+			children = (
+				CCE4ACD322E8903C00DA4F80 /* FindUserByUsername.swift */,
+				CCE4ACD622E8905400DA4F80 /* UserFinder.swift */,
+				CCE4ACDC22E8908E00DA4F80 /* UserFinderError.swift */,
+				CCE4ACD922E8906C00DA4F80 /* UserReceiver.swift */,
+			);
+			path = FindUserByUsername;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1121,6 +1325,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = CCE4AB4B22E3C6E600DA4F80;
 			productRefGroup = CCE4AB5522E3C6E600DA4F80 /* Products */;
@@ -1140,6 +1345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE4AB6222E3C6E800DA4F80 /* LaunchScreen.storyboard in Resources */,
+				CCAE481E22F4F7EA002F904A /* Localizable.strings in Resources */,
 				CCE4AC5222E5326300DA4F80 /* Gallery.storyboard in Resources */,
 				CCE4AB5F22E3C6E800DA4F80 /* Assets.xcassets in Resources */,
 				CCE4AC7622E5574700DA4F80 /* ImageCollectionViewCell.xib in Resources */,
@@ -1197,6 +1403,7 @@
 				CCE4AC7522E5574700DA4F80 /* ImageCollectionViewCell.swift in Sources */,
 				CCE4ABC722E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
 				CCE4AC0A22E5030C00DA4F80 /* DefaultHTTPClient.swift in Sources */,
+				CC61B9C122EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift in Sources */,
 				CCE4ABBB22E3EF4E00DA4F80 /* Query.swift in Sources */,
 				CCE4AC4022E52B5200DA4F80 /* GetImageUrlsExecutorError.swift in Sources */,
 				CCE4AC2422E520D900DA4F80 /* DefaultImageUrlsFetcher.swift in Sources */,
@@ -1206,6 +1413,7 @@
 				CCE4AC1722E5150000DA4F80 /* ImageInfoJSONParser.swift in Sources */,
 				CCE4AC2D22E5288F00DA4F80 /* DefaultPublicImagesFetcher.swift in Sources */,
 				CCE4AB5822E3C6E600DA4F80 /* AppDelegate.swift in Sources */,
+				CCE4ACD422E8903C00DA4F80 /* FindUserByUsername.swift in Sources */,
 				CCE4ABC422E3F0B000DA4F80 /* PublicImagesReceiver.swift in Sources */,
 				CCE4ABF722E4FF2300DA4F80 /* DependencyConfigurator.swift in Sources */,
 				CCE4AC5B22E5384900DA4F80 /* GalleryScreen.swift in Sources */,
@@ -1213,18 +1421,23 @@
 				CCE4AB9022E3CB3700DA4F80 /* ImageUrls.swift in Sources */,
 				CCE4AC0122E500F800DA4F80 /* HTTPClientError.swift in Sources */,
 				CCE4ABDE22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
+				CCE4ACD722E8905400DA4F80 /* UserFinder.swift in Sources */,
 				CCE4AC1E22E5208000DA4F80 /* ImageUrlsJSONParser.swift in Sources */,
 				CCE4AC9E22E61D1B00DA4F80 /* ImageDetailsPresenter.swift in Sources */,
 				CCE4AB8A22E3CA8D00DA4F80 /* ParameterizedUseCase.swift in Sources */,
+				CCAE481322F10149002F904A /* DefaultUserJSONParser.swift in Sources */,
 				CCE4AC3D22E52B4600DA4F80 /* GetImageUrlsExecutor.swift in Sources */,
 				CCE4AC5522E536E800DA4F80 /* GalleryViewController.swift in Sources */,
 				CCE4ABE822E4D7F100DA4F80 /* ImageInfoFetcherError.swift in Sources */,
 				CCE4ABE522E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
+				CC61B9BB22EE047D0095FEAF /* FindUserByUsernameExecutor.swift in Sources */,
 				CCE4AC6E22E555A500DA4F80 /* GalleryViewControllerDataSourceExtension.swift in Sources */,
+				CCAE480D22F10013002F904A /* DefaultUserFinder.swift in Sources */,
 				CCE4AC4922E52B7E00DA4F80 /* FetchPublicImagesExecutorError.swift in Sources */,
 				CCE4AC8F22E55E3E00DA4F80 /* GalleryViewControllerPresenterExtension.swift in Sources */,
 				CCE4AC1922E5151600DA4F80 /* ImageInfoJSONParserError.swift in Sources */,
 				CCE4AC2022E5209D00DA4F80 /* ImageUrlsJSONParserError.swift in Sources */,
+				CCE4ACDA22E8906C00DA4F80 /* UserReceiver.swift in Sources */,
 				CCE4AC3A22E52B3300DA4F80 /* DefaultGetImageInfoExecutor.swift in Sources */,
 				CCE4AC2922E5276D00DA4F80 /* ImageSummaryJSONParserError.swift in Sources */,
 				CCE4AC4C22E52B8900DA4F80 /* DefaultFetchPublicImagesExecutor.swift in Sources */,
@@ -1233,11 +1446,14 @@
 				CCE4AC7E22E5587E00DA4F80 /* ImageCell.swift in Sources */,
 				CCE4AB9722E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
 				CCE4AC8A22E55D9B00DA4F80 /* ImageCollectionViewCellPresenterExtension.swift in Sources */,
+				CCE4ACC822E88F5C00DA4F80 /* User.swift in Sources */,
+				CCAE481522F27C56002F904A /* GalleryViewControllerSearchBarExtension.swift in Sources */,
 				CCE4AC3722E52B2600DA4F80 /* GetImageInfoExecutorError.swift in Sources */,
 				CCE4ACB322E629F300DA4F80 /* Alerts.swift in Sources */,
 				CCE4ABAC22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */,
 				CCE4ABB522E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
 				CCE4ABBE22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
+				CCAE482522F4F913002F904A /* StringLocalizationExtension.swift in Sources */,
 				CCE4ABE222E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */,
 				CCE4AC8D22E55E1900DA4F80 /* GalleryViewControllerFlowLayoutExtension.swift in Sources */,
 				CCE4AB9A22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
@@ -1246,7 +1462,11 @@
 				CCE4ACB022E626CE00DA4F80 /* ImageDetailsViewControllerPresenterExtension.swift in Sources */,
 				CCE4ABFE22E500CF00DA4F80 /* HTTPClient.swift in Sources */,
 				CCE4AC1422E5116000DA4F80 /* DefaultImageInfoFetcher.swift in Sources */,
+				CCAE480F22F10055002F904A /* UserJSONParser.swift in Sources */,
 				CCE4AC9C22E6117500DA4F80 /* ImageDetailsViewController.swift in Sources */,
+				CCE4ACDD22E8908E00DA4F80 /* UserFinderError.swift in Sources */,
+				CC61B9BE22EE04930095FEAF /* FindUserByUsernameExecutorError.swift in Sources */,
+				CCAE481122F1012A002F904A /* UserJSONParserError.swift in Sources */,
 				CCE4AC0C22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4AC3422E52B1600DA4F80 /* GetImageInfoExecutor.swift in Sources */,
 				CCE4ABD022E3F24A00DA4F80 /* PublicImagesFetcherError.swift in Sources */,
@@ -1266,27 +1486,38 @@
 				CCE4ABD622E4D47F00DA4F80 /* ImageInfoFetcherMock.swift in Sources */,
 				CCE4AC6322E5389A00DA4F80 /* GalleryPresenterTests.swift in Sources */,
 				CCE4AB9822E3CB7E00DA4F80 /* ImageUrlsFetcher.swift in Sources */,
+				CCE4ACD222E88FED00DA4F80 /* FindUserByUsernameTests.swift in Sources */,
 				CCE4AC3E22E52B4600DA4F80 /* GetImageUrlsExecutor.swift in Sources */,
 				CCE4AC4122E52B5200DA4F80 /* GetImageUrlsExecutorError.swift in Sources */,
 				CCE4AC3B22E52B3300DA4F80 /* DefaultGetImageInfoExecutor.swift in Sources */,
 				CCE4AC8522E55A2000DA4F80 /* GetImageUrlsExecutorMockForFailure.swift in Sources */,
+				CCE4ACD522E8903C00DA4F80 /* FindUserByUsername.swift in Sources */,
 				CCE4AC4A22E52B7E00DA4F80 /* FetchPublicImagesExecutorError.swift in Sources */,
 				CCE4ACA422E61D8800DA4F80 /* ImageDetailsScreenMock.swift in Sources */,
 				CCE4ACA922E61EF300DA4F80 /* ImageDetailsPresenterTests.swift in Sources */,
 				CCE4AC8822E55A9C00DA4F80 /* ImageCellPresenter.swift in Sources */,
+				CCE4ACC922E88F5C00DA4F80 /* User.swift in Sources */,
+				CCE4ACD022E88FB700DA4F80 /* UserFixture.swift in Sources */,
 				CCE4AC6C22E53A3300DA4F80 /* FetchPublicImagesExecutorMockForFailure.swift in Sources */,
+				CCAE481B22F492B5002F904A /* FindUserByUsernameExecutorMockForFailure.swift in Sources */,
 				CCE4AC3522E52B1600DA4F80 /* GetImageInfoExecutor.swift in Sources */,
+				CCAE481922F27FAF002F904A /* FindUserByUsernameExecutorMock.swift in Sources */,
+				CC61B9C222EE04A10095FEAF /* DefaultFindUserByUsernameExecutor.swift in Sources */,
 				CCE4ABA822E3CD2400DA4F80 /* ImageUrlsReceiverMock.swift in Sources */,
 				CCE4AC7A22E5584100DA4F80 /* ImageCellMock.swift in Sources */,
+				CCE4ACDE22E8908E00DA4F80 /* UserFinderError.swift in Sources */,
 				CCE4ABAA22E3CD4000DA4F80 /* ImageUrlsFetcherMockForFailure.swift in Sources */,
 				CCE4ABBF22E3EF9E00DA4F80 /* ImageSummary.swift in Sources */,
+				CCE4ACE022E890CD00DA4F80 /* UserFinderMock.swift in Sources */,
 				CCE4ABA622E3CCE700DA4F80 /* ImageUrlsFixture.swift in Sources */,
 				CCE4ABE322E4D7DA00DA4F80 /* GetImageInfo.swift in Sources */,
 				CCE4ACA722E61EC100DA4F80 /* ImageDetailsScreen.swift in Sources */,
 				CCE4AC4722E52B7300DA4F80 /* FetchPublicImagesExecutor.swift in Sources */,
 				CCE4ABB022E3E8A700DA4F80 /* FetchPublicImagesTests.swift in Sources */,
 				CCE4AC5C22E5384900DA4F80 /* GalleryScreen.swift in Sources */,
+				CCE4ACDB22E8906C00DA4F80 /* UserReceiver.swift in Sources */,
 				CCE4ABB622E3EE7E00DA4F80 /* PublicImagesFetcher.swift in Sources */,
+				CCE4ACE222E890F600DA4F80 /* UserFinderMockForFailure.swift in Sources */,
 				CCE4AC7C22E5585100DA4F80 /* ImageCellPresenterTests.swift in Sources */,
 				CCE4AC4422E52B6000DA4F80 /* DefaultGetImageUrlsExecutor.swift in Sources */,
 				CCE4ABAD22E3CD6C00DA4F80 /* ImageUrlsFetcherError.swift in Sources */,
@@ -1297,6 +1528,7 @@
 				CCE4ABDF22E4D52A00DA4F80 /* ImageInfo.swift in Sources */,
 				CCE4ABCE22E3F1E500DA4F80 /* PublicImagesFetcherMockForFailure.swift in Sources */,
 				CCE4ABD422E4D45300DA4F80 /* GetImageInfoTests.swift in Sources */,
+				CC61B9BF22EE04930095FEAF /* FindUserByUsernameExecutorError.swift in Sources */,
 				CCE4AC6522E538BA00DA4F80 /* GalleryScreenMock.swift in Sources */,
 				CCE4AC0222E500F800DA4F80 /* HTTPClientError.swift in Sources */,
 				CCE4AC8322E5593600DA4F80 /* GetImageUrlsExecutorMock.swift in Sources */,
@@ -1308,10 +1540,12 @@
 				CCE4AC0D22E505E600DA4F80 /* FlickrInfoProvider.swift in Sources */,
 				CCE4ABC822E3F0DC00DA4F80 /* FetchPublicImages.swift in Sources */,
 				CCE4AC6A22E539E400DA4F80 /* FetchPublicImagesExecutorMock.swift in Sources */,
+				CC61B9BC22EE047D0095FEAF /* FindUserByUsernameExecutor.swift in Sources */,
 				CCE4ACAE22E6209200DA4F80 /* GetImageInfoExecutorMockForFailure.swift in Sources */,
 				CCE4AC7F22E5587E00DA4F80 /* ImageCell.swift in Sources */,
 				CCE4ABE622E4D7EA00DA4F80 /* ImageInfoFetcher.swift in Sources */,
 				CCE4ABCC22E3F18500DA4F80 /* QueryFixture.swift in Sources */,
+				CCE4ACE422E8915600DA4F80 /* UserReceiverMock.swift in Sources */,
 				CCE4AB9122E3CB3700DA4F80 /* ImageUrls.swift in Sources */,
 				CCE4AC4D22E52B8900DA4F80 /* DefaultFetchPublicImagesExecutor.swift in Sources */,
 				CCE4ABA322E3CCA800DA4F80 /* ImageUrlsFetcherMock.swift in Sources */,
@@ -1323,6 +1557,7 @@
 				CCE4AC9F22E61D1B00DA4F80 /* ImageDetailsPresenter.swift in Sources */,
 				CCE4ABA122E3CC8E00DA4F80 /* GetImageUrlsTests.swift in Sources */,
 				CCE4ABF222E4FF0900DA4F80 /* DependencyReceiver.swift in Sources */,
+				CCE4ACD822E8905400DA4F80 /* UserFinder.swift in Sources */,
 				CCE4AB9B22E3CB9A00DA4F80 /* ImageUrlsReceiver.swift in Sources */,
 				CCE4ABDC22E4D4E300DA4F80 /* ImageInfoFixture.swift in Sources */,
 			);
@@ -1352,10 +1587,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CCAE482022F4F7EA002F904A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAE481F22F4F7EA002F904A /* en */,
+				CCAE482222F4F80E002F904A /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CCE4AB6022E3C6E800DA4F80 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CCE4AB6122E3C6E800DA4F80 /* Base */,
+				CCAE482122F4F80E002F904A /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1367,6 +1612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1428,6 +1674,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

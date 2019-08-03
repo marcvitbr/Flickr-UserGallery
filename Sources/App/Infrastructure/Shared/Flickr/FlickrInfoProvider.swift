@@ -38,4 +38,12 @@ final class FlickrInfoProvider {
                 "format": "json",
                 "nojsoncallback": "1"]
     }
+
+    static func parametersForFindUserMethod(username: String) -> [String: String] {
+        return ["method": "flickr.people.findByUsername",
+                "api_key": FlickrInfoProvider.apiKey,
+                "username": username,
+                "format": "json",
+                "nojsoncallback": "1"]
+    }
 }

@@ -33,11 +33,19 @@ final class DependencyConfigurator {
                               instance: DefaultPublicImagesFetcher(httpClient: defaultHttpClient,
                                                                    parser: defaultImageSummaryParser))
 
+        let defaultUserParser = DefaultUserJSONParser()
+        dependencies.register(UserJSONParser.self, instance: defaultUserParser)
+        dependencies.register(UserFinder.self,
+                              instance: DefaultUserFinder(httpClient: defaultHttpClient,
+                                                          parser: defaultUserParser))
+
         dependencies.register(GetImageUrlsExecutor.self, instance: DefaultGetImageUrlsExecutor())
 
         dependencies.register(GetImageInfoExecutor.self, instance: DefaultGetImageInfoExecutor())
 
         dependencies.register(FetchPublicImagesExecutor.self, instance: DefaultFetchPublicImagesExecutor())
+
+        dependencies.register(FindUserByUsernameExecutor.self, instance: DefaultFindUserByUsernameExecutor())
 
         dependencies.printInstances()
     }

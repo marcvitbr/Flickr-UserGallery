@@ -11,8 +11,14 @@ import UIKit
 
 final class Alerts {
     static func genericAlert(message: String) -> UIAlertController {
-        return UIAlertController(title: "Oops!",
-                                 message: message,
-                                 preferredStyle: .alert)
+        let alert = UIAlertController(title: "AlertGenericTitle".localized(),
+                                      message: message,
+                                      preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+
+        return alert
     }
 }

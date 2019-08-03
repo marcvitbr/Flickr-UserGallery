@@ -13,34 +13,83 @@ final class GalleryPresenterTests: XCTestCase {
 
     private let screenMock = GalleryScreenMock()
 
-    func testSearchImagesWithTerm() {
+    func testFindUserSuccessfully() {
         let fetchExecutorMock = FetchPublicImagesExecutorMock()
+
+        let findUserExecutorMock = FindUserByUsernameExecutorMock()
+
+        let assertSuccess = { XCTAssertEqual(self.screenMock.callsToPrepareScreenForFetchImages, 1) }
+
+        self.exerciseFindUserAndAssert(findExecutor: findUserExecutorMock,
+                                       fetchExecutor: fetchExecutorMock,
+                                       assertion: assertSuccess)
+    }
+
+    func testErrorWhenFindingUser() {
+        let fetchExecutorMock = FetchPublicImagesExecutorMock()
+
+        let findUserExecutorMock = FindUserByUsernameExecutorMockForFailure()
+
+        let assertFailure = { XCTAssertEqual(self.screenMock.callsToPresentErrorWhenFindingUser, 1) }
+
+        self.exerciseFindUserAndAssert(findExecutor: findUserExecutorMock,
+                                       fetchExecutor: fetchExecutorMock,
+                                       assertion: assertFailure)
+    }
+
+    func testFetchImagesOfUser() {
+        let fetchExecutorMock = FetchPublicImagesExecutorMock()
+
+        let findUserExecutorMock = FindUserByUsernameExecutorMock()
 
         let assertSuccess = { XCTAssertEqual(self.screenMock.callsToPresentImages, 1) }
 
-        self.exerciseAndAssert(executor: fetchExecutorMock,
-                               assertion: assertSuccess)
+        self.exerciseFetchImagesAndAssert(findExecutor: findUserExecutorMock,
+                                          fetchExecutor: fetchExecutorMock,
+                                          assertion: assertSuccess)
     }
 
-    func testErrorWhenSearchingImagesWithTerm() {
-        let searchExecutorMock = FetchPublicImagesExecutorMockForFailure()
+    func testErrorWhenFetchingImagesOfUser() {
+        let fetchExecutorMock = FetchPublicImagesExecutorMockForFailure()
+
+        let findUserExecutorMock = FindUserByUsernameExecutorMock()
 
         let assertFailure = { XCTAssertEqual(self.screenMock.callsToPresentErrorWhenFetchingImages, 1) }
 
-        self.exerciseAndAssert(executor: searchExecutorMock,
+        self.exerciseFetchImagesAndAssert(findExecutor: findUserExecutorMock,
+                               fetchExecutor: fetchExecutorMock,
                                assertion: assertFailure)
     }
 
-    private func exerciseAndAssert(executor: FetchPublicImagesExecutorMock, assertion: () -> Void) {
+    private func exerciseFetchImagesAndAssert(findExecutor: FindUserByUsernameExecutorMock,
+                                              fetchExecutor: FetchPublicImagesExecutorMock,
+                                              assertion: () -> Void) {
         let presenter = GalleryPresenter(screen: self.screenMock,
-                                         fetchExecutor: executor)
+                                         fetchExecutor: fetchExecutor,
+                                         findUserExecutor: findExecutor)
 
         presenter.fetchImages(with: Query(userId: self.userId,
                                           page: 1))
 
         XCTAssertEqual(self.screenMock.callsToClearResultsView, 1)
 
-        XCTAssertEqual(executor.callsToExecuteFetch, 1)
+        XCTAssertEqual(fetchExecutor.callsToExecuteFetch, 1)
+
+        assertion()
+    }
+
+    private func exerciseFindUserAndAssert(findExecutor: FindUserByUsernameExecutorMock,
+                                           fetchExecutor: FetchPublicImagesExecutorMock,
+                                           assertion: () -> Void) {
+        let presenter = GalleryPresenter(screen: self.screenMock,
+                                         fetchExecutor: fetchExecutor,
+                                         findUserExecutor: findExecutor)
+
+        presenter.findUser("eyetwist")
+
+        XCTAssertEqual(self.screenMock.callsToClearResultsView, 1)
+
+        XCTAssertEqual(findExecutor.callsToExecuteFindUserByUsername, 1)
 
         assertion()
     }

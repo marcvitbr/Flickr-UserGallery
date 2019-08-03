@@ -11,33 +11,35 @@ import UIKit
 
 extension GalleryViewController: GalleryScreen {
     func clearResultsView() {
-        if !self.currentQuery.isFirstPage() {
-            return
-        }
-
-        self.currentImages = []
-
         DispatchQueue.main.async {
+            guard let query = self.currentQuery, query.isFirstPage() else {
+                return
+            }
+
+            self.currentImages = []
+
             self.collectionView.reloadData()
         }
     }
 
-    func presentImages(_ images: [ImageSummary]) {
-        if self.currentQuery.isFirstPage() {
-            self.currentImages = images
+    func prepareScreenForFetchImages(of user: User) {
+        DispatchQueue.main.async {
+            self.fetchPublicImages(from: user.identifier)
+        }
+    }
 
-            DispatchQueue.main.async {
+    func presentImages(_ images: [ImageSummary]) {
+        DispatchQueue.main.async {
+            if self.currentQuery.isFirstPage() {
+                self.currentImages = images
                 self.collectionView.reloadData()
+                return
             }
 
-            return
-        }
+            let currentCount = self.currentImages.count
 
-        let currentCount = self.currentImages.count
+            self.currentImages += images
 
-        self.currentImages += images
-
-        DispatchQueue.main.async {
             self.collectionView.performBatchUpdates({
                 let newIndexes = (currentCount..<(currentCount + images.count))
                     .map { IndexPath(row: $0, section: 0) }
@@ -47,11 +49,19 @@ extension GalleryViewController: GalleryScreen {
         }
     }
 
+    func presentErrorWhenFindingUser() {
+        self.presentErrorAlert(message: "ErrorMessageFindingUser".localized())
+    }
+
     func presentErrorWhenFetchingImages() {
-        let errorMessage = "Sorry, something went wrong when fetching the images. Please try again."
+        self.presentErrorAlert(message: "ErrorMessageFetchingImages".localized())
+    }
 
-        let alert = Alerts.genericAlert(message: errorMessage)
+    internal func presentErrorAlert(message: String) {
+        DispatchQueue.main.async {
+            let alert = Alerts.genericAlert(message: message)
 
-        self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }

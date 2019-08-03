@@ -1,0 +1,17 @@
+/*
+  Localizable.strings
+  Flickr-UserGallery
+
+  Created by Marcelo Vitoria on 02/08/19.
+  Copyright © 2019 Marcelo Vitoria. All rights reserved.
+*/
+
+"AlertGenericTitle" = "Ops!";
+
+"ErrorMessageFindingUser" = "Desculpe, algo deu errado ao tentar encontrar o usuário. Por favor, tente novamente.";
+
+"ErrorMessageFetchingImages" = "Desculpe, algo deu errado ao buscar imagens. Por favor, tente novamente.";
+
+"SearchFieldPlaceholderText" = "Procure pelo nome de usuário Flickr";
+
+"ErrorMessageFetchingImageDetails" = "Algo deu errado ao carregar os detalhes da imagem. Por favor, tente novamente.";

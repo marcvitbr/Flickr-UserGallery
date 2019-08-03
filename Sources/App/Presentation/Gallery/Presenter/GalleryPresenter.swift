@@ -11,9 +11,25 @@ final class GalleryPresenter {
 
     private let fetchExecutor: FetchPublicImagesExecutor
 
-    init(screen: GalleryScreen, fetchExecutor: FetchPublicImagesExecutor) {
+    private let findUserExecutor: FindUserByUsernameExecutor
+
+    init(screen: GalleryScreen,
+         fetchExecutor: FetchPublicImagesExecutor,
+         findUserExecutor: FindUserByUsernameExecutor) {
         self.screen = screen
         self.fetchExecutor = fetchExecutor
+        self.findUserExecutor = findUserExecutor
+    }
+
+    func findUser(_ username: String) {
+        self.screen.clearResultsView()
+
+        guard let user = try? self.findUserExecutor.executeFindUserByUsername(username) else {
+            self.screen.presentErrorWhenFindingUser()
+            return
+        }
+
+        self.screen.prepareScreenForFetchImages(of: user)
     }
 
     func fetchImages(with query: Query) {
